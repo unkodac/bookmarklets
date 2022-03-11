@@ -1,8 +1,8 @@
 
 var array_sei = ['a','b','c','d','e','f'];
-var array_mei = ['a','b','c','d','e','f'];
-var array_sei_kana = ['a','b','c','d','e','f'];
-var array_mei_kana = ['a','b','c','d','e','f'];
+//var array_mei = ['a','b','c','d','e','f'];
+//var array_sei_kana = ['a','b','c','d','e','f'];
+//var array_mei_kana = ['a','b','c','d','e','f'];
 
 const sei_pic = Math.floor(Math.random()*Math.floor(2));
 const mei_pic = Math.floor(Math.random()*Math.floor(2));
