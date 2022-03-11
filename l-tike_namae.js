@@ -24,4 +24,4 @@ document.forms.ttg100.elements.APLCT_LAST_NAME.value = mei;
 document.forms.ttg100.elements.APLCT_FIRST_NAME_KANA.value = sei_kana;
 document.forms.ttg100.elements.APLCT_LAST_NAME_KANA.value = mei_kana;
 
-document.querySelector("[name=NEXT]").click();　//次画面へ
+document.querySelector("[name=NEXT_BUTTON]").click();　//次画面へ
