@@ -18,7 +18,7 @@ var address_n = [sei,mei,mon,day,"@qrnail.com"];
 var address_name = address_n.join('');
 
 var address_rand = ["aaa","@qrnail.com"];
-var address_name = address_rand.join('');
+var address_random = address_rand.join('');
 
 //メアド生成
 //var mailtype = Math.floor(Math.random()*Math.floor(2));
