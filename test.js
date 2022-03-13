@@ -14,7 +14,7 @@ const mei_pic = Math.floor(Math.random()*Math.floor(mei_len));
 var sei = array_sei_r[sei_pic];
 var mei = array_mei_r[mei_pic];
 var st = [sei,mei];
-const ll = st.length;
+var ll = str.join('');
 
 
 //メアド生成
