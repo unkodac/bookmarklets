@@ -15,9 +15,10 @@ var sei = array_sei_r[sei_pic];
 var mei = array_mei_r[mei_pic];
 
 //メアド生成
-const mail = Math.floor(Math.random()*Math.floor(2));
-if(mail = 0){document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = Math.random().toString(36).slice(-1*(ketasuu+5))+"@qrnail.com";}
-else{mail = "sei"+"mei"+"Math.floor(Math.random()*Math.floor(10000))";}
+//const mail = Math.floor(Math.random()*Math.floor(2));
+//if(mail = 0){document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = Math.random().toString(36).slice(-1*(ketasuu+5))+"@qrnail.com";}
+//else{mail = "sei"+"mei"+"Math.floor(Math.random()*Math.floor(10000))";}
+document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = sei;
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value="0"+(Math.floor(Math.random()*Math.floor(3))+7)+"0"+(Math.floor(Math.random()*Math.floor(80000000))+10000000);
 
 //document.querySelector("[name=NEXT]").click(); //次ページへ
