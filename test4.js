@@ -17,14 +17,14 @@ var day = (Math.floor(Math.random()*Math.floor(28))+1);
 var address_n = [sei,mei,mon,day,"@qrnail.com"];
 var address_name = address_n.join('');
 
-var address_rand = [Math.random().toString(36).slice(-1*(ketasuu+5)),"@qrnail.com"];
-var address_random address_rand.join('');
+//var address_rand = [Math.random().toString(36).slice(-1*(ketasuu+5)),"@qrnail.com"];
+//var address_random address_rand.join('');
 
 //メアド生成
-var mailtype = Math.floor(Math.random()*Math.floor(2));
-if(mailtype = 0){document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = address_random;}
-else{document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = address_name;}
-
+//var mailtype = Math.floor(Math.random()*Math.floor(2));
+//if(mailtype = 0){document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = address_random;}
+//else{document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = address_name;}
+document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = address_name;
 //電話番号生成
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value="0"+(Math.floor(Math.random()*Math.floor(3))+7)+"0"+(Math.floor(Math.random()*Math.floor(80000000))+10000000);
 
