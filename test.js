@@ -13,7 +13,9 @@ const mei_pic = Math.floor(Math.random()*Math.floor(mei_len));
 
 var sei = array_sei_r[sei_pic];
 var mei = array_mei_r[mei_pic];
-var st = [sei,mei];
+const mon = (Math.floor(Math.random()*Math.floor(12))+1);
+const day = (Math.floor(Math.random()*Math.floor(28))+1);
+var st = [sei,mei,mon,day];
 var ll = str.join('');
 
 
