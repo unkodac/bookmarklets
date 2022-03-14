@@ -41,10 +41,11 @@ array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メ
 var text = array.join('');
 
 //ログをtxtファイルに保存
+setTimeout( function() {
 var blob = new Blob([text],{type:"text/plan"});
 const link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
-
+}, 1500 );
 //次画面へ
 document.querySelector("[name=ENTRY_FIX]").click();
