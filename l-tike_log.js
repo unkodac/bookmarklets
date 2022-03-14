@@ -37,7 +37,7 @@ var kaijou = j_.join('');
 var text_name = [meado,'.txt'];
 
 //ログ本体生成
-array = ['会場',kaijou,'日時',nichiji,'枚数',maisuu,'メールアドレス',meado,'電話番号',denwa,'受取方法',uketori,'支払方法',shiharai,'氏名',shimei,'氏名(カナ)',shimei_kana,'パスワード',pass];
+array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n','支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n'];
 var text = array.join('\n');
 
 //ログをtxtファイルに保存
