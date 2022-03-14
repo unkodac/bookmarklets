@@ -2,10 +2,13 @@
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
-var a = el[5].outerText;
+var j = el[5].outerText;
+var j_ = j.split('\n');
+var kaijou = j_.join('');
+var a = el[6].outerText;
 var a_ = a.split('\n');
 var nichiji = a_.join('');
-var b = el[10].outerText;
+var b = el[11].outerText;
 var b_ = b.split('\n');
 var maisuu = b_.join('');
 var c = el[14].outerText;
@@ -29,9 +32,7 @@ var shimei_kana = h_.join('');
 var i = el[26].outerText;
 var i_ = i.split('\n');
 var pass = i_.join('');
-var j = el[6].outerText;
-var j_ = j.split('\n');
-var kaijou = j_.join('');
+
 
 //ファイル名(メアド+txt)
 var text_name = [meado,'.txt'];
