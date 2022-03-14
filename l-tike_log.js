@@ -2,10 +2,10 @@
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
-var j = el[2].outerText;
+var j = el[2].outerText; //PCの場合5
 var j_ = j.split('\n');
 var kaijou = j_.join('');
-var a = el[4].outerText;
+var a = el[4].outerText; //PCの場合6
 var a_ = a.split('\n');
 var nichiji = a_.join('');
 var b = el[10].outerText;
