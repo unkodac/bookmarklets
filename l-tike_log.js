@@ -5,7 +5,7 @@ var el = document.querySelectorAll("table td,th,p");
 var a = el[6].outerText;
 var a_ = a.split('\n');
 var nichiji = a_.join('');
-var b = el[10].outerText;
+var b = el[11].outerText;
 var b_ = b.split('\n');
 var maisuu = b_.join('');
 var c = el[14].outerText;
@@ -38,7 +38,7 @@ var text_name = [meado,'.txt'];
 
 //ログ本体生成
 array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n','支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n'];
-var text = array.join('\n');
+var text = array.join('');
 
 //ログをtxtファイルに保存
 var blob = new Blob([text],{type:"text/plan"});
