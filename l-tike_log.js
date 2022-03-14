@@ -33,9 +33,11 @@ var i = el[26].outerText;
 var i_ = i.split('\n');
 var pass = i_.join('');
 
+//日程抽出
 
 //ファイル名(メアド+txt)
-var text_name = [meado,'.txt'];
+var text_n = [meado,'.txt'];
+var text_name = text_n.join('');
 
 //ログ本体生成
 array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n','支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n'];
