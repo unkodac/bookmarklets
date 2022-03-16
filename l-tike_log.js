@@ -39,8 +39,18 @@ var pass = i_.join('');
 var text_n = [meado,'.txt'];
 var text_name = text_n.join('');
 
+//IPアドレス取得
+var API_URL = 'https://api.ipify.org/?format=json';
+var res = await fetch(API_URL);
+var data = await res.json();
+
+//日時取得
+var date1 = new Date();
+var date2 = date1.getFullYear() + "年" + (date1.getMonth() + 1)  + "月" + date1.getDate() + "日" + date1.getHours() + "時" + date1.getMinutes() + "分" + date1.getSeconds(); + "秒" + 
+
 //ログ本体生成
-array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n','支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n'];
+array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n',
+         '支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n','応募完了日時:',date2,'応募時IPアドレス:',data.ip];
 var text = array.join('');
 
 //ログをtxtファイルに保存
