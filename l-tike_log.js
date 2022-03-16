@@ -1,5 +1,8 @@
 //申込ログ採取ツール[共用]
 
+//使用者
+var user = "高森";
+
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
 var j = el[2].outerText; //PCの場合5
@@ -33,8 +36,6 @@ var i = el[26].outerText;
 var i_ = i.split('\n');
 var pass = i_.join('');
 
-//日程抽出
-
 //ファイル名(メアド+txt)
 var text_n = [meado,'.txt'];
 var text_name = text_n.join('');
@@ -50,7 +51,7 @@ var date2 = date1.getFullYear() + "年" + (date1.getMonth() + 1)  + "月" + date
 
 //ログ本体生成
 array = ['会場:',kaijou,'\n','日時:',nichiji,'\n','枚数:',maisuu,'\n','メールアドレス:',meado,'\n','電話番号:',denwa,'\n','受取方法:',uketori,'\n',
-         '支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n','応募完了日時:',date2,'応募時IPアドレス:',data.ip];
+         '支払方法:',shiharai,'\n','氏名:',shimei,'\n','氏名(カナ):',shimei_kana,'\n','パスワード:',pass,'\n','応募完了日時:',date2,'応募時IPアドレス:',data.ip,'応募者:',user];
 var text = array.join('');
 
 //ログをtxtファイルに保存
