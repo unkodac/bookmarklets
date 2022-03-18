@@ -14,7 +14,7 @@ var day = (Math.floor(Math.random()*28)+1);
 
 //メアド生成
 var domain = Math.floor(Math.random()*domains.length);
-var address_n = sei + mei + mon + day + domain;
+var address_name = sei + mei + mon + day + domain;
 
 var ketasuu = Math.floor(Math.random()*6);
 var address_rand = Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
