@@ -24,7 +24,7 @@ var mailtype = Math.floor(Math.random()*Math.floor(2));
 if(mailtype == 0){
   mail = address_name;
 }else{
-  mail = address_random;
+  mail = address_rand;
 }
 
 //メアド入力
