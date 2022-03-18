@@ -63,9 +63,9 @@ async function getip(){
 getip();
 
 //日時取得
-var day = new Date();
-var date = day.getFullYear() + "年" + (day.getMonth() + 1)  + "月" + day.getDate() + "日" + 
-           day.getHours() + "時" + day.getMinutes() + "分" + day.getSeconds() + "秒";
+var getdate = new Date();
+var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
+           getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
 //ログ本体生成
 log = [kaijou,nichiji,maisuu,meado,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
@@ -78,6 +78,11 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
 
 //次画面へ
+//if (pc == true){
+//  var sleep = 0:
+//}else{
+//  var sleep = 2000;
+//}
 //setTimeout(function(){
 //document.querySelector("[name=ENTRY_FIX]").click();
-//},2000); //ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+//},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
