@@ -18,9 +18,16 @@ if(gender == true){
   var sex = 2;
 }
 //登録情報作成
+const sei_pic = Math.floor(Math.random()*sei_len);
+const mei_pic = Math.floor(Math.random()*mei_len);
+
+var sei = array_sei[sei_pic];
+var mei = array_mei[mei_pic];
+var sei_kana = array_sei_kana[sei_pic];
+var mei_kana = array_mei_kana[mei_pic];
 var sei = array_sei[Math.floor(Math.random()*array_sei.length)];
 var mei = array_mei[Math.floor(Math.random()*array_mei.length)];
-var sei_kana = array_sei_kana[Math.floor(Math.random()*array_sei_kana.length)];
+var sei_kana = array_sei_kana[Math.floor(Math.random()*array_sei.length)];
 var mei_kana = array_mei_kana[Math.floor(Math.random()*array_mei_kana.length)];
 var year = (Math.floor(Math.random()*16)+1985);
 var mon = (Math.floor(Math.random()*12)+1);
