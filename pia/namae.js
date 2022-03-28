@@ -22,7 +22,6 @@ var sei = array_sei[Math.floor(Math.random()*array_sei.length)];
 var mei = array_mei[Math.floor(Math.random()*array_mei.length)];
 var sei_kana = array_sei_kana[Math.floor(Math.random()*array_sei_kana.length)];
 var mei_kana = array_mei_kana[Math.floor(Math.random()*array_mei_kana.length)];
-if 
 var year = (Math.floor(Math.random()*16)+1985);
 var mon = (Math.floor(Math.random()*12)+1);
 var day = (Math.floor(Math.random()*28)+1);
