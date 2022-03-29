@@ -38,5 +38,5 @@ document.forms.NT0202S03Form.elements.birthdD.value = day;
 document.forms.NT0202S03Form.elements.telno1.value = 050;
 //document.forms.NT0202S03Form.elements.birthdD.value = 
 //document.forms.NT0202S03Form.elements.birthdD.value = 
-//document.forms.NT0202S03Form.elements.birthdD.value = 
+//document.forms.NT0202S03Form.elements.birthdD.value =
 //document.forms.NT0202S03Form.elements.birthdD.value = 
