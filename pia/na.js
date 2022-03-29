@@ -2,8 +2,6 @@
 
 //利用者
 var user = "";
-//ドメイン使用
-var domain = false;
 //性別(1=男性,2=女性)
 var sex = 2;
 //名前コード
