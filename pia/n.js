@@ -24,7 +24,13 @@ var sei_kana = array_sei_kana[sei_pic];
 var mei_kana = array_mei_kana[mei_pic];
 var year = (Math.floor(Math.random()*16)+1985);
 var mon = (Math.floor(Math.random()*12)+1);
+if(mon < 10){
+  mon = "0" + mon;
+}
 var day = (Math.floor(Math.random()*28)+1);
+if(day < 10){
+  day = "0" + day;
+}
 
 //登録情報入力
 document.forms.NT0202S03Form.elements.lastNm.value = sei;
@@ -35,7 +41,7 @@ document.forms.NT0202S03Form.elements.sexTyp.value = sex;
 document.forms.NT0202S03Form.elements.birthdY.value = year;
 document.forms.NT0202S03Form.elements.birthdM.value = mon;
 document.forms.NT0202S03Form.elements.birthdD.value = day;
-document.forms.NT0202S03Form.elements.telno1.value = 050;
+document.forms.NT0202S03Form.elements.telno1.value = "050";
 //document.forms.NT0202S03Form.elements.birthdD.value = 
 //document.forms.NT0202S03Form.elements.birthdD.value = 
 //document.forms.NT0202S03Form.elements.birthdD.value = 
