@@ -25,7 +25,7 @@ var sei = array_sei[sei_pic];
 var mei = array_mei[mei_pic];
 var sei_kana = array_sei_kana[sei_pic];
 var mei_kana = array_mei_kana[mei_pic];
-ar year = (Math.floor(Math.random()*16)+1985);
+var year = (Math.floor(Math.random()*16)+1985);
 var mon = (Math.floor(Math.random()*12)+1);
 if(mon < 10){
   mon = "0" + mon;
