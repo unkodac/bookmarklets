@@ -6,7 +6,7 @@ var post_pic = Math.floor(Math.random()*array_post.length);
 
 var pref = 13; //東京都
 var post = array_post[post_pic];
-var post1 = post.slice(3);
+var post1 = post.slice(0,2);
 var post2 = post.slice(-4);
 var city = array_city[post_pic];
 var town = array_town[post_pic];
