@@ -19,6 +19,16 @@ if(sex == 1){
 var sei_pic = Math.floor(Math.random()*array_sei.length);
 var mei_pic = Math.floor(Math.random()*array_mei.length);
 
+//IPアドレス取得
+async function getip(){
+    const API_URL = 'https://api.ipify.org/?format=json';
+    const res = await fetch(API_URL);
+    const data = await res.json();
+    ip = data.ip;
+    return ip;
+}
+getip();
+
 //登録情報作成
 var pass = Math.random().toString(36).slice(-8);
 var sei = array_sei[sei_pic];
@@ -60,16 +70,6 @@ document.forms.NT0202S03Form.elements.telno2.value = tel2;
 document.forms.NT0202S03Form.elements.telno3.value = tel3;
 document.forms.NT0202S03Form.elements.sendMembNewsMlFlg.value = 0;
 document.forms.NT0202S03Form.elements.terms_of_use.checked = true;
-
-//IPアドレス取得
-async function getip(){
-    const API_URL = 'https://api.ipify.org/?format=json';
-    const res = await fetch(API_URL);
-    const data = await res.json();
-    ip = data.ip;
-    return ip;
-}
-getip();
 
 //日時取得
 var getdate = new Date();
