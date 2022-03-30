@@ -19,16 +19,6 @@ if(sex == 1){
 var sei_pic = Math.floor(Math.random()*array_sei.length);
 var mei_pic = Math.floor(Math.random()*array_mei.length);
 
-//IPアドレス取得
-async function getip(){
-    const API_URL = 'https://api.ipify.org/?format=json';
-    const res = await fetch(API_URL);
-    const data = await res.json();
-    ip = data.ip;
-    return ip;
-}
-getip();
-
 //登録情報作成
 var pass = Math.random().toString(36).slice(-8);
 var sei = array_sei[sei_pic];
@@ -76,10 +66,22 @@ var getdate = new Date();
 var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
-//IPを取得完了するまで待機
-while (typeof ip !== 'undefined'){
-  sleep(100);
+//IPアドレス取得
+async function getip(){
+    const API_URL = 'https://api.ipify.org/?format=json';
+    const res = await fetch(API_URL);
+    const data = await res.json();
+    ip = data.ip;
+    return ip;
 }
+getip();
+
+//IPを取得完了するまで待機
+while (typeof ip == 'undefined'){
+  var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  await sleep(100);
+}
+
 //登録情報をtxtファイルで保存
 var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,ip,user,'\n'];
 var text_name = String(data_array[1]) + '.txt';
