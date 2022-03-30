@@ -16,7 +16,7 @@ var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1
 var tel1 = document.getElementById("tel1").value;
 var tel2 = document.getElementById("tel2").value;
 var tel3 = document.getElementById("tel3").value;
-var tel = string(tel1) + string(tel2) + string(tel3);
+var tel = String(tel1) + String(tel2) + String(tel3);
 
 //住所を入力
 document.forms.NT0202S03Form.elements.postno1.value = post1;
@@ -26,7 +26,7 @@ document.forms.NT0202S03Form.elements.addr2.value = city;
 document.forms.NT0202S03Form.elements.addr3.value = town + hn;
 
 //登録情報をtxtファイルで保存
-var log = [string(post1) + string(post2),pref + city + town + hn,tel,'\n'];
+var log = [String(post1) + String(post2),pref + city + town + hn,tel,'\n'];
 var text_name = "z" + tel + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
