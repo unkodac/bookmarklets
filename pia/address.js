@@ -5,7 +5,7 @@ var array_town = [\u98ef\u7530\u6a4b,\u4e00\u756a\u753a,\u5ca9\u672c\u753a,\u518
 
 var post_pic = Math.floor(Math.random()*array_post.length);
 
-var pref = "東京都";
+var pref = 13; //東京都
 var post = array_post[post_pic];
 var post1 = post.slice(3);
 var post2 = post.slice(-4);
@@ -13,9 +13,8 @@ var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
-document.forms.NT0202S03Form.elements.postno1.value = mail;
-document.forms.NT0202S03Form.elements.passwd.value = pass;
-document.forms.NT0202S03Form.elements.passwdConfirm.value = pass;
-document.forms.NT0202S03Form.elements.lastNm.value = sei;
-document.forms.NT0202S03Form.elements.fastNm.value = mei;
-document.forms.NT0202S03Form.elements.lastKn.value = sei_kana;
+document.forms.NT0202S03Form.elements.postno1.value = post1;
+document.forms.NT0202S03Form.elements.postno2.value = post2;
+document.forms.NT0202S03Form.elements.prefectureCd.value = pref;
+document.forms.NT0202S03Form.elements.addr2.value = city + town;
+document.forms.NT0202S03Form.elements.addr3.value = hn;
