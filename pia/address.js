@@ -15,5 +15,5 @@ var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1
 document.forms.NT0202S03Form.elements.postno1.value = post1;
 document.forms.NT0202S03Form.elements.postno2.value = post2;
 document.forms.NT0202S03Form.elements.prefectureCd.value = pref;
-document.forms.NT0202S03Form.elements.addr2.value = city + town;
-document.forms.NT0202S03Form.elements.addr3.value = hn;
+document.forms.NT0202S03Form.elements.addr2.value = city;
+document.forms.NT0202S03Form.elements.addr3.value = town + hn;
