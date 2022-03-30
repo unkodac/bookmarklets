@@ -77,12 +77,14 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
 //登録情報をtxtファイルで保存
+setTimeout(function(){
 var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,ip,user,'\n'];
 var text_name = String(data_array[1]) + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
+},1000);
 
 //完了ボタンクリック
 //document.querySelector("[id=buttonAttentionNext]").click();
