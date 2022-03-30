@@ -1,4 +1,4 @@
-//チケットぴあアカウント登録自動入力 第一画面
+//チケットぴあアカウント登録自動入力 第一画面[PC専用]
 
 //利用者
 var user = "";
@@ -16,17 +16,16 @@ if(sex == 1){
   var array_mei_kana = ['\u30b5\u30af\u30e9','\u30df\u30b5\u30ad','\u30ea\u30f3','\u30cf\u30eb\u30ca','\u30ca\u30ca\u30df','\u30df\u30af','\u30ab\u30ce\u30f3','\u30e6\u30a4','\u30e2\u30e2\u30ab','\u30d2\u30ca\u30bf','\u30df\u30ef','\u30b3\u30c8\u30df','\u30a2\u30e4\u30ab','\u30a2\u30e4\u30ab','\u30df\u30e6\u30a6','\u30b3\u30b3\u30ed','\u30df\u30c4\u30ad','\u30a2\u30a4','\u30e2\u30a8','\u30ab\u30ca\u30c7','\u30de\u30ca\u30df','\u30ab\u30f3\u30ca','\u30a2\u30a4\u30ea','\u30e6\u30a4\u30ca','\u30e6\u30a6\u30ab','\u30cf\u30eb\u30ab','\u30c1\u30d2\u30ed','\u30a2\u30a4\u30ab','\u30a2\u30df','\u30ec\u30ca','\u30a2\u30f3\u30ba','\u30ea\u30b3','\u30ab\u30ca','\u30ea\u30ca','\u30e1\u30b0\u30df','\u30af\u30eb\u30df','\u30a2\u30a4\u30ca','\u30de\u30aa','\u30de\u30db','\u30ab\u30db','\u30ad\u30e7\u30a6\u30b3','\u30de\u30c9\u30ab','\u30b5\u30e4\u30ab','\u30de\u30df','\u30e6\u30a6\u30ca','\u30e6\u30a6\u30a2','\u30e6\u30e1','\u30ea\u30ce','\u30a2\u30e4\u30ce','\u30ca\u30ca','\u30ca\u30aa','\u30b5\u30ad','\u30a2\u30ab\u30ea','\u30e6\u30ea','\u30e1\u30a4','\u30ea\u30b5','\u30a2\u30e4\u30b5','\u30a2\u30b9\u30ab','\u30e6\u30ab\u30ea','\u30df\u30c9\u30ea','\u30cf\u30c5\u30ad','\u30cf\u30ca','\u30a8\u30a4\u30b3','\u30e6\u30a6\u30b3','\u30e6\u30ad','\u30de\u30ea\u30b3','\u30de\u30ea\u30b3','\u30df\u30cf\u30eb','\u30a2\u30e6\u30df','\u30a2\u30df','\u30ca\u30c4\u30ad','\u30ab\u30aa\u30ea','\u30ab\u30aa\u30eb\u30b3','\u30b5\u30af\u30e9\u30b3','\u30d2\u30ca\u30b3','\u30df\u30ba\u30ad','\u30e8\u30b7\u30b3','\u30c1\u30ab','\u30db\u30ce\u30ab','\u30bb\u30a4\u30b3','\u30e8\u30a6\u30b3','\u30e6\u30ab','\u30bf\u30ab\u30b3','\u30de\u30b5\u30b3','\u30ab\u30ec\u30f3','\u30ad\u30e8\u30df','\u30de\u30ad\u30b3','\u30de\u30ad','\u30ab\u30ca\u30a8','\u30b5\u30ca\u30a8','\u30c8\u30e2\u30b3','\u30a2\u30ad\u30b3','\u30e6\u30ea\u30b3','\u30ad\u30df','\u30a2\u30f3\u30ea','\u30a8\u30ea\u30b3','\u30ab\u30b3','\u30d5\u30df\u30ab','\u30b8\u30e5\u30f3\u30b3','\u30de\u30a4\u30b3','\u30ea\u30a8\u30b3','\u30e6\u30df','\u30a8\u30ea','\u30ce\u30be\u30df','\u30d2\u30ed\u30a8','\u30e6\u30a4\u30b3','\u30ec\u30a4\u30b3','\u30ea\u30c4\u30b3','\u30e6\u30a6\u30ea','\u30ea\u30a8','\u30a8\u30df','\u30a2\u30ea\u30b5','\u30df\u30ab','\u30e2\u30e2\u30a8','\u30e6\u30ea\u30ab','\u30de\u30a4','\u30ec\u30a4\u30ab','\u30ca\u30aa\u30b3','\u30b7\u30c5\u30b3','\u30b7\u30ba\u30a8','\u30df\u30ca\u30df','\u30b7\u30ce','\u30ab\u30e8\u30b3','\u30b5\u30a8\u30b3','\u30d2\u30ed\u30df','\u30b5\u30aa\u30ea','\u30ca\u30aa','\u30b1\u30a4\u30b3','\u30ad\u30e7\u30a6\u30ab','\u30a2\u30f3\u30ca','\u30de\u30ca','\u30ab\u30ba\u30df','\u30b5\u30e6\u30ea','\u30b5\u30c8\u30df','\u30b5\u30c1\u30b3','\u30b5\u30c1','\u30df\u30c1','\u30d2\u30c8\u30df','\u30eb\u30ab','\u30a2\u30ba\u30b5','\u30a2\u30c4\u30b3','\u30de\u30b5\u30df','\u30b9\u30df\u30b3','\u30b9\u30df\u30a8','\u30ab\u30ba\u30a8','\u30ce\u30ea\u30b3','\u30de\u30e6','\u30de\u30e4','\u30b7\u30c5\u30ad','\u30a2\u30b9\u30df']; //名(カナ)リスト
   var gender = "女";
 }
-//登録情報作成
-var pass = Math.random().toString(36).slice(-8);
-
 var sei_pic = Math.floor(Math.random()*array_sei.length);
 var mei_pic = Math.floor(Math.random()*array_mei.length);
+
+//登録情報作成
+var pass = Math.random().toString(36).slice(-8);
 var sei = array_sei[sei_pic];
 var mei = array_mei[mei_pic];
 var sei_kana = array_sei_kana[sei_pic];
 var mei_kana = array_mei_kana[mei_pic];
-
-var year = (Math.floor(Math.random()*16)+1985);
+ar year = (Math.floor(Math.random()*16)+1985);
 var mon = (Math.floor(Math.random()*12)+1);
 if(mon < 10){
   mon = "0" + mon;
@@ -36,12 +35,14 @@ if(day < 10){
   day = "0" + day;
 }
 
+//メアド欄に入力したメアドと電話番号を分離
 var data = document.getElementById("mail1").value;
 var data_array = data.split('\t');
 var mail = data_array[0];
 var tel1 = data.slice(-11,-8);
 var tel2 = data.slice(-8,-4);
 var tel3 = data.slice(-4);
+
 //登録情報入力
 document.forms.NT0202S03Form.elements.email1.value = mail;
 document.forms.NT0202S03Form.elements.passwd.value = pass;
@@ -59,11 +60,29 @@ document.forms.NT0202S03Form.elements.telno2.value = tel2;
 document.forms.NT0202S03Form.elements.telno3.value = tel3;
 document.forms.NT0202S03Form.elements.sendMembNewsMlFlg.value = 0;
 document.forms.NT0202S03Form.elements.terms_of_use.checked = true;
-//登録情報をtxtファイルで保存
-var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],user,'\n'];
 
-var text_name = mail + '.txt';
+//IPアドレス取得
+async function getip(){
+    const API_URL = 'https://api.ipify.org/?format=json';
+    const res = await fetch(API_URL);
+    const data = await res.json();
+    ip = data.ip;
+    return ip;
+}
+getip();
+
+//日時取得
+var getdate = new Date();
+var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
+           getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
+
+//登録情報をtxtファイルで保存
+var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,ip,user,'\n'];
+var text_name = data_array[1] + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
+
+//完了ボタンクリック
+//document.querySelector("[id=buttonAttentionNext]").click();
