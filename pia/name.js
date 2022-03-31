@@ -35,6 +35,10 @@ if(day < 10){
   day = "0" + day;
 }
 
+async function sleep(msec){
+  var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  await sleep(msec);
+}
 //メアド欄に入力したメアドと電話番号を分離
 var data = document.getElementById("mail1").value;
 var data_array = data.split('\t');
@@ -78,8 +82,7 @@ getip();
 
 //IPを取得完了するまで待機
 while (typeof ip == 'undefined'){
-  var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-  await sleep(100);
+  sleep(100);
 }
 
 //登録情報をtxtファイルで保存
