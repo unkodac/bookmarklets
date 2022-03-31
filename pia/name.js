@@ -91,4 +91,5 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
 
 //完了ボタンクリック
-//document.querySelector("[id=buttonAttentionNext]").click();
+window.scrollTo(0,2500);
+document.elementFromPoint(490, 365).click();
