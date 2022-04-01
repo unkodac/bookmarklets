@@ -35,9 +35,9 @@ if(day < 10){
   day = "0" + day;
 }
 
-async function sleep(msec){
-  var sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-  await sleep(msec);
+function sleep(msec){
+  var startMsec = new Date(); 
+  while (new Date() - startMsec < msec);
 }
 //メアド欄に入力したメアドと電話番号を分離
 var data = document.getElementById("mail1").value;
@@ -95,4 +95,5 @@ link.download = text_name;link.click();
 
 //完了ボタンクリック
 window.scrollTo(0,2500);
+sleep(100);
 document.elementFromPoint(490, 365).click();
