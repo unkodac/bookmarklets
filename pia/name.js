@@ -67,7 +67,7 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
 //登録情報をtxtファイルで保存
-var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,user,'\n'];
+var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,String(year) + String(mon) + String(day),data_array[1],date,user,'\n'];
 var text_name = String(data_array[1]) + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
