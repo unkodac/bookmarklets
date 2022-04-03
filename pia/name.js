@@ -35,10 +35,6 @@ if(day < 10){
   day = "0" + day;
 }
 
-function sleep(msec){
-  var startMsec = new Date(); 
-  while (new Date() - startMsec < msec);
-}
 //メアド欄に入力したメアドと電話番号を分離
 var data = document.getElementById("mail1").value;
 var data_array = data.split('\t');
@@ -70,30 +66,28 @@ var getdate = new Date();
 var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
-//IPアドレス取得
-async function getip(){
-    const API_URL = 'https://api.ipify.org/?format=json';
-    const res = await fetch(API_URL);
-    const data = await res.json();
-    ip = data.ip;
-    return ip;
-}
-getip();
-
-//IPを取得完了するまで待機
-while (typeof ip == 'undefined'){
-  sleep(100);
-}
-
 //登録情報をtxtファイルで保存
-var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,ip,user,'\n'];
+var log = [mail,pass,sei + mei,sei_kana + mei_kana,gender,year + mon + day,data_array[1],date,user,'\n'];
 var text_name = String(data_array[1]) + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
 
-//完了ボタンクリック
+//ウィンドウ最下部
 window.scrollTo(0,2500);
-sleep(100);
-document.elementFromPoint(490, 365).click();
+
+//電話番号コピー
+function copyToClipBoard(){
+  var anyText= data_array[1];
+  var textBox = document.createElement("textarea");
+  textBox.setAttribute("id", "target");
+  textBox.setAttribute("type", "hidden");
+  textBox.textContent = anyText;
+  document.body.appendChild(textBox);
+
+  textBox.select();
+  document.execCommand('copy');
+  document.body.removeChild(textBox);
+}
+copyToClipBoard();
