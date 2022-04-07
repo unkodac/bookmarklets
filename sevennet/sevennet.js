@@ -14,6 +14,7 @@ var post_pic = Math.floor(Math.random()*array_post.length);
 var pref = "東京都";
 var prefcode = 13;
 var post = array_post[post_pic];
+var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
 //パスワード生成
 var pass = Math.random().toString(36).slice(-8);
@@ -55,5 +56,4 @@ document.getElementById("input-19").value = (Math.floor(Math.random()*9000)+1000
 document.getElementById("input-20").value = (Math.floor(Math.random()*9000)+1000);
 document.getElementById("addressPostalCodeInput").value = post;
 document.getElementById("addressPullDownInput-01").value = prefcode;
-//document.getElementById("input-20").value = 
-
+document.getElementById("input-16").value = hn;
