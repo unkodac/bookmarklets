@@ -1,12 +1,16 @@
+//コピペ部分離
+var data = document.getElementById("q_3").value;
+var data_array = data.split('\t');
+
 //性別選択
-var sex_len = Math.floor(Math.random()*2);
+/*var sex_len = Math.floor(Math.random()*2);
 if(sex_len == 0){
   var sex = "男性";
 }else{
   var sex = "女性";
 }
 document.forms.ttg130.elements.q_2.value = sex;
-
+*/
 //年代選択
 var age_len = Math.floor(Math.random()*3);
 if(age_len == 0){
@@ -29,6 +33,9 @@ if(artist_san > 30){
 }
 
 //質問2
+document.forms.ttg130.elements.q_4.value = data_array[0];
+
+//質問3
 var dance_array = ['\u8e0a', 'A\u30fbRA\u30fbSHI', 'Follow Me', '\u3058\u3087\u3044\u3075\u308b', 'ABC\u4f53\u64cd', 'ICY','WANNABE','\u604b\u3059\u308b\u30d5\u30a9\u30fc\u30c1\u30e5\u30f3\u30af\u30c3\u30ad\u30fc', '\u30d8\u30d3\u30fc\u30ed\u30fc\u30c6\u30fc\u30b7\u30e7\u30f3', 'Choo Choo TRAIN', 'Given-Taken', '\u30c0\u30f3\u30b7\u30f3\u30b0\u30fb\u30d2\u30fc\u30ed\u30fc', '\u30df\u30b9\u30bf\u30fc', 'MONSTER DANCE', 'One Night Carnival', 'LOVE & JOY', '\u306b\u3093\u3058\u3083\u308a\u3070\u3093\u3070\u3093', '\u30b5\u30a4\u30ec\u30f3\u30c8\u30de\u30b8\u30e7\u30ea\u30c6\u30a3\u30fc', 'ONE NIGHT IN ARABIA','YOUNG MAN[Y.M.C.A.]', '\u65b0\u5b9d\u5cf6', 'R.Y.U.S.E.I.', 'OH-EH-OH', '\u7121\u9650\u5927', 'HELLO! HALO!', 'Make Me Better', '\u9752\u6625\u30a2\u30df\u30fc\u30b4', 'HACK', 'To The First','NEW ERA', 'HELLO HELLO', 'YumYumYum \uff5eSpicyGirl\uff5e', '\u821e\u3044\u843d\u3061\u308b\u82b1\u3073\u3089', 'Hug feat. kojikoji', 'U.S.A.', '\u30b0\u30c3\u30d0\u30a4\u5ba3\u8a00', 'EZ DO DANCE', 'SHAKE IT OFF', '\u30f4\u30a1\u30f3\u30d1\u30a4\u30a2', 'Heartbeat','Alcohol-Free', 'Kura Kura', 'TT', '\u3088\u3046\u304b\u3044\u4f53\u64cd\u7b2c\u4e00', '\u60d1\u661f\u30eb\u30fc\u30d7', 'NIGHT OF FIRE', 'Take a picture','Poppin Shakin', 'Make you happy', '\u30c8\u30ea\u30b3', 'NA', '\u30a4\u30f3\u30d5\u30eb\u30a8\u30f3\u30b5\u30fc', '\u30ad\u30df\u30cf\u30ad\u30df\u30c9\u30ea','\u540c\u62c5\u2606\u62d2\u5426','TOKYO GIRL','Dynamite', 'Permission to Dance', 'Butter', '\u30b7\u30eb\u30fb\u30f4\u30fb\u30d7\u30ec\u30b8\u30c7\u30f3\u30c8', 'PPAP', '\u30d7\u30ed\u30df\u30b9\u30b6\u30b9\u30bf\u30fc', '\u541b\u3057\u304b\u52dd\u305f\u3093', '\u30ad\u30e5\u30f3', '\u30cf\u30ec\u6674\u30ec\u30e6\u30ab\u30a4', '\u30d1\u30d7\u30ea\u30ab', 'DDU-DU DDU-DU', '\u30aa\u30c9\u30eb\u30fc\u30d7', '\u591c\u306b\u30c0\u30f3\u30b9', 'Let Me Fly\uff5e\u305d\u306e\u672a\u6765\u3078\uff5e','\u3046\u3061\u3067\u8e0a\u308d\u3046','\u604b', 'EXCITE', 'WanteD! WanteD!', 'BURNING DESIRE', '\u604b\u611b\u30ec\u30dc\u30ea\u30e5\u30fc\u30b7\u30e7\u30f321', '\u884c\u304f\u305c\u3063! \u602a\u76d7\u5c11\u5973', '\u30cf\u30c3\u30d4\u30fc\u30a6\u30a7\u30c7\u30a3\u30f3\u30b0\u524d\u30bd\u30f3\u30b0', '\u30bf\u30c3\u30bf', '\u3060\u304b\u3089\u3001\u3072\u3068\u308a\u3058\u3083\u306a\u3044', 'Mela!', 'PERFECT HUMAN'];
 var dance = dance_array[Math.floor(Math.random()*dance_array.length)];
 document.forms.ttg130.elements.q_5.value = dance;
@@ -66,3 +73,15 @@ document.forms.ttg130.elements.q_10.value = cm;
 var song18_array = ['\u304a\u3069\u308b\u30dd\u30f3\u30dd\u30b3\u30ea\u30f3','\u6d6a\u6f2b\u98db\u884c','\u4eca\u3059\u3050Kiss Me','\u3055\u3088\u306a\u3089\u4eba\u985e','OH YEAH\uff01','Dear Friend','\u60c5\u71b1\u306e\u8594\u8587','\u304f\u3061\u3073\u308b\u304b\u3089\u5a9a\u85ac','\u771f\u590f\u306e\u679c\u5b9f','\u30a4\u30d5\u30fb\u30a6\u30a4\u30fb\u30db\u30fc\u30eb\u30c9\u30fb\u30aa\u30f3\u30fb\u30c8\u30a5\u30b2\u30b6\u30fc','\u30e9\u30d6\u30fb\u30b9\u30c8\u30fc\u30ea\u30fc\u306f\u7a81\u7136\u306b','SAY YES','\u611b\u306f\u52dd\u3064','\u3069\u3093\u306a\u3068\u304d\u3082\u3002','\u306f\u3058\u307e\u308a\u306f\u3044\u3064\u3082\u96e8','\u3042\u306a\u305f\u306b\u4f1a\u3048\u3066\u3088\u304b\u3063\u305f','LADY NAVIGATION','\u3057\u3083\u307c\u3093\u7389','Eyes to me\uff0f\u5f7c\u306f\u53cb\u9054','ALONE','\u541b\u304c\u3044\u308b\u3060\u3051\u3067','\u60b2\u3057\u307f\u306f\u96ea\u306e\u3088\u3046\u306b','BLOWIN','\u305d\u308c\u304c\u5927\u4e8b','\u6d99\u306e\u30ad\u30c3\u30b9','\u30ac\u30e9\u30ac\u30e9\u30d8\u30d3\u304c\u3084\u3063\u3066\u304f\u308b','\u3082\u3046\u604b\u306a\u3093\u3066\u3057\u306a\u3044','if','PIECE MY WISH','\u6d45\u3044\u7720\u308a','YAH YAH YAH','\u611b\u306e\u307e\u307e\u306b\u308f\u304c\u307e\u307e\u306b \u50d5\u306f\u541b\u3060\u3051\u3092\u50b7\u3064\u3051\u306a\u3044','\u30ed\u30fc\u30c9','\u30a8\u30ed\u30c6\u30a3\u30ab\u30fb\u30bb\u30d6\u30f3','\u88f8\u8db3\u306e\u5973\u795e','\u8ca0\u3051\u306a\u3044\u3067','\u6642\u306e\u6249','\u771f\u590f\u306e\u591c\u306e\u5922','\u63fa\u308c\u308b\u60f3\u3044','\u4e16\u754c\u4e2d\u306e\u8ab0\u3088\u308a\u304d\u3063\u3068','innocent world','\u30ed\u30de\u30f3\u30b9\u306e\u795e\u69d8','\u604b\u3057\u3055\u3068 \u305b\u3064\u306a\u3055\u3068 \u5fc3\u5f37\u3055\u3068','\u7a7a\u3068\u541b\u306e\u3042\u3044\u3060\u306b','Hello\uff0cmy friend','survival dAnce\uff5eno no cry more\uff5e','\u3042\u306a\u305f\u3060\u3051\u898b\u3064\u3081\u3066\u308b','Boy Meets Girl','\u4e16\u754c\u304c\u7d42\u308b\u307e\u3067\u306f\uff65\uff65\uff65','LOVE LOVE LOVE','WOW WAR TONIGHT\uff5e\u6642\u306b\u306f\u8d77\u3053\u305b\u3088\u30e0\u30fc\u30f4\u30e1\u30f3\u30c8','HELLO','Tomorrow never knows','\u30b7\u30fc\u30bd\u30fc\u30b2\u30fc\u30e0\uff5e\u52c7\u6562\u306a\u604b\u306e\u6b4c\uff5e','Hello\uff0cAgain\uff5e\u6614\u304b\u3089\u3042\u308b\u5834\u6240\uff5e','\u5947\u8de1\u306e\u5730\u7403','TOMORROW','\u30ed\u30d3\u30f3\u30bd\u30f3','LOVE PHANTOM','\u540d\u3082\u306a\u304d\u8a69','DEPARTURES','LA\u30fbLA\u30fbLA LOVE SONG','\u30c1\u30a7\u30ea\u30fc','\u82b1\uff0dMemento-Mori\uff0d','\u7a7a\u3082\u98db\u3079\u308b\u306f\u305a','\u611b\u306e\u8a00\u970a\uff5eSpiritual Message','Chase the Chance','CAN YOU CELEBRATE\uff1f','\u785d\u5b50\u306e\u5c11\u5e74','\u3072\u3060\u307e\u308a\u306e\u8a69','FACE','STEADY','PRIDE','YOU ARE THE ONE','Everything','HOWEVER','White Love','\u8a98\u60d1','\u591c\u7a7a\u30ce\u30e0\u30b3\u30a6','my graduation','\u30bf\u30a4\u30df\u30f3\u30b0','SOUL LOVE','\u9577\u3044\u9593','HONEY','\u611b\u3055\u308c\u308b\u3088\u308a \u611b\u3057\u305f\u3044','Time goes by','\u5168\u90e8\u3060\u304d\u3057\u3081\u3066\uff0f\u9752\u306e\u6642\u4ee3\u3060\u3093\u3054\uff13\u5144\u5f1f','Winter\uff0cagain','A','energy flow','Automatic','Addicted To You','LOVE\u30de\u30b7\u30fc\u30f3','BE WITH YOU','HEAVEN\u2019S DRIVE'];
 var song18 = song18_array[Math.floor(Math.random()*song18_array.length)];
 document.forms.ttg130.elements.q_11.value = song18;
+
+//質問10
+document.forms.ttg130.elements.q_12.value = data_array[1];
+
+//質問11
+document.forms.ttg130.elements.q_13.value = data_array[2];
+
+//質問12
+document.forms.ttg130.elements.q_14.value = data_array[3];
+
+//質問13
+document.forms.ttg130.elements.q_15.value = data_array[4];
