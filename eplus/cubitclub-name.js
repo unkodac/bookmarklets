@@ -67,3 +67,8 @@ document.getElementsByName("uji.model.70544.value")[0].value = post2;
 document.getElementsByName("uji.model.70533.combo")[0].value = pref;
 document.getElementsByName("uji.model.70528.value")[0].value = city + town;
 document.getElementsByName("uji.model.70547.value")[0].value = hn;
+if(shop == "famima"){
+  document.getElementById("i12").checked = true;
+}else{
+  document.getElementById("i2").checked = true;
+}
