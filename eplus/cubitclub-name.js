@@ -64,6 +64,6 @@ document.getElementsByName("uji.model.70541.value")[0].value = mail;
 document.getElementsByName("uji.model.70522.value")[0].value = mail;
 document.getElementsByName("uji.model.70542.value")[0].value = post1;
 document.getElementsByName("uji.model.70544.value")[0].value = post2;
-document.getElementsByName("uji.model.70533.value")[0].value = pref;
+document.getElementsByName("uji.model.70533.combo")[0].value = pref;
 document.getElementsByName("uji.model.70528.value")[0].value = city + town;
 document.getElementsByName("uji.model.70547.value")[0].value = hn;
