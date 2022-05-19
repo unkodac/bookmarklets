@@ -54,4 +54,11 @@ var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
+//データ入力
+document.getElementsByName("uji.model.70529.value")[0].value = sei;
+document.getElementsByName("uji.model.70537.value")[0].value = mei;
 document.getElementsByName("uji.model.70538.value")[0].value = sei_kana;
+document.getElementsByName("uji.model.70539.value")[0].value = mei_kana;
+document.getElementsByName("uji.model.70540.value")[0].value = tel;
+document.getElementsByName("uji.model.70541.value")[0].value = mail;
+document.getElementsByName("uji.model.70522.value")[0].value = mail;
