@@ -60,23 +60,23 @@ var array_name = document.querySelectorAll("span");
 var sei_html = array_name[6].outerHTML;
 var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var mei_html = array_name[7].outerHTML;
+var mei_name = "uji.model." + mei_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var sei_kana_html = array_name[11].outerHTML;
+var sei_kana_name = "uji.model." + sei_kana_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var mei_kana_html = array_name[12].outerHTML;
+var mei_kana_name = "uji.model." + sei_kana_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var tel_html = array_name[17].outerHTML;
+var tel_name = "uji.model." + tel_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var mail_html = array_name[22].outerHTML;
+var mail_name = "uji.model." + mail_html.match("(\\d{5})")[0] + ".value"
 
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+var mail_conf_html = array_name[26].outerHTML;
+var mail_conf_name = "uji.model." + mail_conf_html.match("(\\d{5})")[0] + ".value"
 
 var sei_html = array_name[6].outerHTML;
 var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
