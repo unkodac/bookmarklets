@@ -86,7 +86,7 @@ var post2 = String(post_name);
 var post2_name = "uji.model." + post2 + ".value";
 
 var pref_html = array_name[35].outerHTML;
-var pref_name = "uji.model." + pref_html.match("(\\d{5})")[0] + ".value";
+var pref_name = "uji.model." + pref_html.match("(\\d{5})")[0] + ".combo";
 
 var city_html = array_name[37].outerHTML;
 var city_name = "uji.model." + city_html.match("(\\d{5})")[0] + ".value";
