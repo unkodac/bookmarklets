@@ -112,3 +112,4 @@ if(shop == "famima"){
 }else{
   document.getElementById("i2").checked = true;
 }
+document.getElementById("i8").checked = true;
