@@ -67,7 +67,7 @@ var sei_kana_html = array_name[11].outerHTML;
 var sei_kana_name = "uji.model." + sei_kana_html.match("(\\d{5})")[0] + ".value";
 
 var mei_kana_html = array_name[12].outerHTML;
-var mei_kana_name = "uji.model." + sei_kana_html.match("(\\d{5})")[0] + ".value";
+var mei_kana_name = "uji.model." + mei_kana_html.match("(\\d{5})")[0] + ".value";
 
 var tel_html = array_name[17].outerHTML;
 var tel_name = "uji.model." + tel_html.match("(\\d{5})")[0] + ".value";
