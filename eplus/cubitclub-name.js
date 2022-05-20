@@ -54,6 +54,45 @@ var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
+//テキストボックスのname属性の値を取得
+var array_name = document.querySelectorAll("span");
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
+var sei_html = array_name[6].outerHTML;
+var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value"
+
 //データ入力
 document.getElementsByName("uji.model.70529.value")[0].value = sei;
 document.getElementsByName("uji.model.70537.value")[0].value = mei;
