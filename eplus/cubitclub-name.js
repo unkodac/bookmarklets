@@ -82,8 +82,8 @@ var post_name_html = array_name[31].outerHTML;
 var post1_name = "uji.model." + post_name_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var post_name = Number(post_name_html.match(/uji.model.(.*).value/)[1]) + 2;
-var post2_name = String(post_name);
-var post2 = "uji.model." + post2_name + ".value";
+var post2_str = String(post_name);
+var post2_name = "uji.model." + post2_str + ".value";
 
 var pref_html = array_name[35].outerHTML;
 var pref_name = "uji.model." + pref_html.match(/uji.model.(.*).combo/)[1] + ".combo";
