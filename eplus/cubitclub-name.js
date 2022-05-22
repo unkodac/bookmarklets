@@ -58,41 +58,41 @@ var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1
 var array_name = document.querySelectorAll("span");
 
 var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match("(\\d{5})")[0] + ".value";
+var sei_name = "uji.model." + sei_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var mei_html = array_name[7].outerHTML;
-var mei_name = "uji.model." + mei_html.match("(\\d{5})")[0] + ".value";
+var mei_name = "uji.model." + mei_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var sei_kana_html = array_name[11].outerHTML;
-var sei_kana_name = "uji.model." + sei_kana_html.match("(\\d{5})")[0] + ".value";
+var sei_kana_name = "uji.model." + sei_kana_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var mei_kana_html = array_name[12].outerHTML;
-var mei_kana_name = "uji.model." + mei_kana_html.match("(\\d{5})")[0] + ".value";
+var mei_kana_name = "uji.model." + mei_kana_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var tel_html = array_name[17].outerHTML;
-var tel_name = "uji.model." + tel_html.match("(\\d{5})")[0] + ".value";
+var tel_name = "uji.model." + tel_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var mail_html = array_name[22].outerHTML;
-var mail_name = "uji.model." + mail_html.match("(\\d{5})")[0] + ".value";
+var mail_name = "uji.model." + mail_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var mail_conf_html = array_name[26].outerHTML;
-var mail_conf_name = "uji.model." + mail_conf_html.match("(\\d{5})")[0] + ".value";
+var mail_conf_name = "uji.model." + mail_conf_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var post_name_html = array_name[31].outerHTML;
-var post1_name = "uji.model." + post_name_html.match("(\\d{5})")[0] + ".value";
+var post1_name = "uji.model." + post_name_html.match(/uji.model.(.*).value/)[1] + ".value";
 
-var post_name = Number(post_name_html.match("(\\d{5})")[0]) + 2;
+var post_name = Number(post_name_html.match(/uji.model.(.*).value/)[1]) + 2;
 var post2 = String(post_name);
 var post2_name = "uji.model." + post2 + ".value";
 
 var pref_html = array_name[35].outerHTML;
-var pref_name = "uji.model." + pref_html.match("(\\d{5})")[0] + ".combo";
+var pref_name = "uji.model." + pref_html.match(/uji.model.(.*).combo/)[1] + ".combo";
 
 var city_html = array_name[37].outerHTML;
-var city_name = "uji.model." + city_html.match("(\\d{5})")[0] + ".value";
+var city_name = "uji.model." + city_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 var hn_html = array_name[40].outerHTML;
-var hn_name = "uji.model." + hn_html.match("(\\d{5})")[0] + ".value";
+var hn_name = "uji.model." + hn_html.match(/uji.model.(.*).value/)[1] + ".value";
 
 //データ入力
 document.getElementsByName(sei_name)[0].value = sei;
