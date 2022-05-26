@@ -92,3 +92,6 @@ if(shoprand == 0){
   document.getElementById("i2").checked = true;
 }
 document.getElementById("i8").checked = true;
+
+var items=document.getElementsByTagName('body');
+if(items.length>0)items[0].scrollTop=items[0].scrollHeight;
