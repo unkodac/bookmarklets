@@ -1,7 +1,7 @@
 //eplus名義入力画面自動化
 
 //性別選択
-var sex = "otoko";　//otoko,onna
+var sex = "onna";　//otoko,onna
 //使用ドメイン入力
 var domains = ['@qrnail.com'];
 
