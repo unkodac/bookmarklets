@@ -40,7 +40,7 @@ var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random(
 
 //メアド生成
 var ketasuu = Math.floor(Math.random()*6);
-var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains;
+var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains[Math.floor(Math.random()*dmains.length)];
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
