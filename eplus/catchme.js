@@ -88,7 +88,7 @@ document.getElementsByName(mail_conf_name)[0].value = mail;
 var shoprand = Math.floor(Math.random()*2);
 if(shoprand == 0){
   document.getElementById("i12").checked = true;
-}else(shoprand == 1){
+}else if(shoprand == 1){
   document.getElementById("i2").checked = true;
 }
 document.getElementById("i8").checked = true;
