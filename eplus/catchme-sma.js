@@ -86,3 +86,5 @@ document.getElementsByName(mail_name)[0].value = mail;
 document.getElementsByName(mail_conf_name)[0].value = mail;
 document.getElementById("i9").checked = true;
 document.getElementById("i8").checked = true;
+
+window.scrollTo(0,10000);
