@@ -93,4 +93,4 @@ if(shoprand == 0){
 }
 document.getElementById("i8").checked = true;
 
-window.scrollTo(0,10000);
+getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
