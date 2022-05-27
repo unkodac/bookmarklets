@@ -87,4 +87,4 @@ document.getElementsByName(mail_conf_name)[0].value = mail;
 document.getElementById("i9").checked = true;
 document.getElementById("i8").checked = true;
 
-window.scrollTo(0,10000);
+getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
