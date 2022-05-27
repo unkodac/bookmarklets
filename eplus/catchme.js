@@ -39,8 +39,10 @@ var mei_kana = array_mei_kana[mei_pic];
 var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
 
 //メアド生成
-var ketasuu = Math.floor(Math.random()*6);
-var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains[Math.floor(Math.random()*domains.length)];
+var chars = 'abcdefghijklmnopqrstuvwxyz';
+var str = Math.random().toString(36).slice(-1*(Math.floor(Math.random()*6)+5));
+var str = str.padStart(str.length + 1,chars.charAt(Math.floor(Math.random()*chars.length)));
+var mail = str + domains[Math.floor(Math.random()*domains.length)];
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
