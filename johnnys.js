@@ -32,7 +32,7 @@ var tel = t.join('').trim();
 
 var birthday = el[11].outerText;
 
-var log = [name,,post,address,birthday,tel,oshi,nyuukaibi,'\n'];
+var log = [num,,,name,,post,address,birthday,tel,oshi,nyuukaibi,'\n'];
 var text_name = name + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
