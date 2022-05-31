@@ -14,7 +14,7 @@ var nyuukaibi = el[3].outerText;
 var oshi = el[5].outerText;
 
 var name_txt = el[6].outerText;
-var n = name_txt.split(' ');
+var n = name_txt.split('　');
 var name = n.join('');
 
 var post_txt = el[7].outerText;
