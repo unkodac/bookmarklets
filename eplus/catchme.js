@@ -113,3 +113,5 @@ if(shop == "famima"){
   document.getElementById("i2").checked = true;
 }
 document.getElementById("i8").checked = true;
+
+getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
