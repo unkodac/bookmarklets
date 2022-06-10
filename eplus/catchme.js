@@ -3,7 +3,7 @@
 //性別選択
 var sex = "otoko";　//otoko,onna
 //使用ドメイン入力
-var domains = ['@qrnail.com'];
+var domains = ['@ezweb.ne.jp','@docomo.ne.jp','@softbank.ne.jp'];
 //発券店舗
 var shop = "famima";　//famima,seven
 
@@ -107,9 +107,10 @@ document.getElementsByName(post2_name)[0].value = post2;
 document.getElementsByName(pref_name)[0].value = pref;
 document.getElementsByName(city_name)[0].value = city + town;
 document.getElementsByName(hn_name)[0].value = hn;
-if(shop == "famima"){
+var shoprand = Math.floor(Math.random()*2);
+if(shoprand == 0){
   document.getElementById("i12").checked = true;
-}else{
+}else if(shoprand == 1){
   document.getElementById("i2").checked = true;
 }
 document.getElementById("i8").checked = true;
