@@ -39,35 +39,105 @@ var mei_kana = array_mei_kana[mei_pic];
 var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
 
 //メアド生成
+var mon = (Math.floor(Math.random()*12)+1);
+var day = (Math.floor(Math.random()*28)+1);
+var domain = domains[Math.floor(Math.random()*domains.length)];
+
+var address_name = sei + mei + mon + day + domain;
+
 var ketasuu = Math.floor(Math.random()*6);
-var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains;
+var address_rand = Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
+
+//メアド形式選択(1:1)
+var mailtype = Math.floor(Math.random()*Math.floor(2));
+if(mailtype == 0){
+  mail = address_name;
+}else{
+  mail = address_rand;
+}
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
 var pref = "大阪府";
 var hyphen = Math.floor(Math.random()*2);
 var post = array_post[post_pic];
-if(hyphen == 0){
-  var post_n = post;
-}else{
-  var post1 = post.slice(0,3);
-  var post2 = post.slice(-4);
-  var post_n = post1 + "-" + post2;
-}
 var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
 //年齢生成
-var age = (Math.floor(Math.random()*6)+20) + "歳";
+var age = Math.floor(Math.random()*6)+20;
 
+//職業選択
+if(age < 23){
+  var job = "学生";
+}else{
+  var job = "会社員";
+}
+
+//同行者名前生成
+var sei_pic2 = Math.floor(Math.random()*sei_len);
+var mei_pic2 = Math.floor(Math.random()*mei_len);
+
+var sei2 = array_sei[sei_pic2];
+var mei2 = array_mei[mei_pic2];
+
+//同行者住所生成
+var post_pic2 = Math.floor(Math.random()*array_post.length);
+var pref2 = "大阪府";
+var city2 = array_city[post_pic2];
+var town2 = array_town[post_pic2];
+var hn2 = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
+
+//同行者電話番号生成
+var tel2 = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
+
+//同行者メアド生成
+var sei_m = array_sei[Math.floor(Math.random()*array_sei.length)];
+var mei_m = array_mei[Math.floor(Math.random()*array_mei.length)];
+var mon = (Math.floor(Math.random()*12)+1);
+var day = (Math.floor(Math.random()*28)+1);
+var domain = domains[Math.floor(Math.random()*domains.length)];
+
+var address_name = sei_m + mei_m + mon + day + domain;
+
+var ketasuu = Math.floor(Math.random()*6);
+var address_rand = Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
+
+//同行者メアド形式選択(1:1)
+var mailtype = Math.floor(Math.random()*Math.floor(2));
+if(mailtype == 0){
+  mail2 = address_name;
+}else{
+  mail2 = address_rand;
+}
+
+//同行者年齢生成
+var age2 = Math.floor(Math.random()*6)+20;
+
+//同行者職業選択
+if(age2 < 23){
+  var job2 = "学生";
+}else{
+  var job2 = "会社員";
+}
+
+//申し込みデータ入力
 document.getElementById("item15-モエカレはオレンジ色").checked = true;
 document.getElementById("item01").value = sei;
 document.getElementById("item02").value = mei;
 document.getElementById("item12").value = sei_kana + " " + mei_kana;
-document.getElementById("item16").value = post_n;
+document.getElementById("item16").value = post;
 document.getElementById("item17").value = pref + city + town + hn;
 document.getElementById("item10").value = tel;
 document.getElementById("item11").value = mail;
 document.getElementById("item09-802").checked = true;
-document.getElementById("item14").value = age;
+document.getElementById("item14").value = age + "歳";
+document.getElementById("item13").value = job;
+document.getElementById("item18").value = sei2 + mei2;
+document.getElementById("item20").value = pref2 + city2 + town2 + hn2;
+document.getElementById("item21").value = tel2;
+document.getElementById("item22").value = mail2;
+document.getElementById("item24").value = age2 + "歳";
+document.getElementById("item25").value = job2;
+
