@@ -102,7 +102,7 @@ var tel2 = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random
 var sei_r2 = array_sei_r[sei_pic2];
 var mei_r2 = array_mei_r[mei_pic2];
 var mon = (Math.floor(Math.random()*12)+1);
-document.getElevar day = (Math.floor(Math.random()*28)+1);
+var day = (Math.floor(Math.random()*28)+1);
 var domain = domains[Math.floor(Math.random()*domains.length)];
 
 var address_name = sei_r2 + mei_r2 + mon + day + domain;
