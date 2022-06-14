@@ -149,4 +149,3 @@ document.getElementById("item25").value = job2;
 
 //次画面へ
 document.querySelector("[id=btn-confirm]").click();
-document.querySelector("[id=btn-submit]").click();
