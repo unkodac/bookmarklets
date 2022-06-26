@@ -52,7 +52,7 @@ if(birth_m < 10){
 var birth_d = (Math.floor(Math.random()*28)+1);
 var day = (Math.floor(Math.random()*28)+1);
 if(birth_d < 10){
-  birth_ = "0" + birth_d;
+  birth_d = "0" + birth_d;
 }
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
