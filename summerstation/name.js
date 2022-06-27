@@ -88,16 +88,6 @@ var mail = mail[2].outerText;
 var mail = mail.split('tv asahi iD：');
 var mail = mail[1];
 
-//IPアドレス取得
-async function getip(){
-    var API_URL = 'https://api.ipify.org/?format=json';
-    var res = await fetch(API_URL);
-    var data = await res.json();
-    ip = data.ip;
-    return ip;
-}
-getip();
-
 //日時取得
 var getdate = new Date();
 var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
@@ -105,7 +95,7 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
 
 //ログ本体生成
 setTimeout(function(){
-log = [mail,pass,sei + mei,sei_kana + mei_kana,birth_y + birth_m + birth_d,tel,post,date,ip,'\n'];
+log = [mail,pass,sei + mei,sei_kana + mei_kana,birth_y + birth_m + birth_d,tel,post,date,'\n'];
 
 //ログをtxtファイルに保存
 var text_name = mail + '.txt';
@@ -118,4 +108,4 @@ link.download = text_name;link.click();
 setTimeout(function(){
 document.querySelector("[class=submitBT]").click();　
 },20); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
-},350);
+},35);
