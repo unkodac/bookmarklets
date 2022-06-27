@@ -52,7 +52,30 @@ var tel2 = Math.floor(Math.random()*9000)+1000;
 var tel3 = Math.floor(Math.random()*9000)+1000;
 
 //住所生成
+var post_pic = Math.floor(Math.random()*array_post.length);
 var post = array_post[post_pic];
 var post1 = post.slice(0,3);
 var post2 = post.slice(-4);
+
+
+document.getElementsByName("PASSWORD")[0].value = pass;
+document.getElementsByName("RE_PASSWORD")[0].value = pass;
+document.getElementsByName("MEMBER_NAME_1")[0].value = sei;
+document.getElementsByName("MEMBER_NAME_2")[0].value = mei;
+document.getElementsByName("MEMBER_NAME_KANA_1")[0].value = sei_kana;
+document.getElementsByName("MEMBER_NAME_KANA_2")[0].value = mei_kana;
+document.getElementsByName("SEX")[0].checked = true;
+document.getElementsByName("BIRTHDAY_FULL_1")[0].value = birth_y;
+document.getElementsByName("BIRTHDAY_FULL_2")[0].value = birth_m;
+document.getElementsByName("BIRTHDAY_FULL_3")[0].value = birth_d;
+document.getElementsByName("TEL")[0].value = tel1 + "-" + tel2 + "-" + tel3;
+document.getElementsByName("ZIP_CODE_1")[0].value = post1;
+document.getElementsByName("ZIP_CODE_2")[0].value = post2;
+document.getElementsByName("JOB")[0].value = 1;
+document.getElementsByName("FAVORITE_GENRE[]")[0].checked = true;
+document.getElementsByName("FAVORITE_GENRE[]")[13].checked = true;
+document.getElementsByName("LIKE_GENRE[]")[8].checked = true;
+document.getElementsByName("FAVORITE_EVENT[]")[0].checked = true;
+document.getElementsByName("FAVORITE_EVENT[]")[5].checked = true;
+document.getElementsByName("FAVORITE_EVENT[]")[7].checked = true;
 
