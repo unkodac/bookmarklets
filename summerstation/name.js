@@ -50,6 +50,7 @@ if(birth_d < 10){
 var tel1 = "0" + (Math.floor(Math.random()*3)+7) + "0";
 var tel2 = Math.floor(Math.random()*9000)+1000;
 var tel3 = Math.floor(Math.random()*9000)+1000;
+var tel = tel1 + "-" + tel2 + "-" + tel3;
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
@@ -68,7 +69,7 @@ document.getElementsByName("SEX")[0].checked = true;
 document.getElementsByName("BIRTHDAY_FULL_1")[0].value = birth_y;
 document.getElementsByName("BIRTHDAY_FULL_2")[0].value = birth_m;
 document.getElementsByName("BIRTHDAY_FULL_3")[0].value = birth_d;
-document.getElementsByName("TEL")[0].value = tel1 + "-" + tel2 + "-" + tel3;
+document.getElementsByName("TEL")[0].value = tel;
 document.getElementsByName("ZIP_CODE_1")[0].value = post1;
 document.getElementsByName("ZIP_CODE_2")[0].value = post2;
 document.getElementsByName("JOB")[0].value = 1;
@@ -81,5 +82,40 @@ document.getElementsByName("FAVORITE_EVENT[]")[0].checked = true;
 document.getElementsByName("FAVORITE_EVENT[]")[5].checked = true;
 document.getElementsByName("FAVORITE_EVENT[]")[7].checked = true;
 
+//メールアドレス取得
+var mail = document.querySelectorAll("strong");
+var mail = mail[2].outerText;
+var mail = mail.split('tv asahi iD：');
+var mail = mail[1];
+
+//IPアドレス取得
+async function getip(){
+    var API_URL = 'https://api.ipify.org/?format=json';
+    var res = await fetch(API_URL);
+    var data = await res.json();
+    ip = data.ip;
+    return ip;
+}
+getip();
+
+//日時取得
+var getdate = new Date();
+var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
+           getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
+
+//ログ本体生成
+setTimeout(function(){
+log = [mail,pass,sei + mei,sei_kana + mei_kana,birth_y + birth_m + birth_d,tel,post,date,ip,'\n'];
+
+//ログをtxtファイルに保存
+var text_name = mail + '.txt';
+var blob = new Blob([log],{type:"text/plan"});
+var link = document.createElement('a');
+link.href = URL.createObjectURL(blob);
+link.download = text_name;link.click();
+
 //次画面へ
+setTimeout(function(){
 document.querySelector("[class=submitBT]").click();　
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},1500);
