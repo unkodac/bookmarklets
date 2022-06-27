@@ -95,7 +95,7 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
 
 //ログ本体生成
 setTimeout(function(){
-log = [mail,pass,sei + mei,sei_kana + mei_kana,birth_y + birth_m + birth_d,tel,post,date,'\n'];
+log = [mail,pass,sei + mei,sei_kana + mei_kana,String(birth_y) + String(birth_m) + String(birth_d),tel,post,date,'\n'];
 
 //ログをtxtファイルに保存
 var text_name = mail + '.txt';
