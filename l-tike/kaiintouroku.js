@@ -54,7 +54,6 @@ var day = (Math.floor(Math.random()*28)+1);
 if(birth_d < 10){
   birth_d = "0" + birth_d;
 }
-var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
 //データ入力
 document.getElementById("surname").value = sei + "　" + mei;
