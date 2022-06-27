@@ -57,7 +57,7 @@ var post = array_post[post_pic];
 var post1 = post.slice(0,3);
 var post2 = post.slice(-4);
 
-
+//データ入力
 document.getElementsByName("PASSWORD")[0].value = pass;
 document.getElementsByName("RE_PASSWORD")[0].value = pass;
 document.getElementsByName("MEMBER_NAME_1")[0].value = sei;
@@ -72,6 +72,8 @@ document.getElementsByName("TEL")[0].value = tel1 + "-" + tel2 + "-" + tel3;
 document.getElementsByName("ZIP_CODE_1")[0].value = post1;
 document.getElementsByName("ZIP_CODE_2")[0].value = post2;
 document.getElementsByName("JOB")[0].value = 1;
+document.getElementsByName("DM_ACCEPT[]")[0].checked = false;
+document.getElementsByName("MAIL_MAGAZINE[ML_TOUCH]")[0].checked = false;
 document.getElementsByName("FAVORITE_GENRE[]")[0].checked = true;
 document.getElementsByName("FAVORITE_GENRE[]")[13].checked = true;
 document.getElementsByName("LIKE_GENRE[]")[8].checked = true;
@@ -79,3 +81,5 @@ document.getElementsByName("FAVORITE_EVENT[]")[0].checked = true;
 document.getElementsByName("FAVORITE_EVENT[]")[5].checked = true;
 document.getElementsByName("FAVORITE_EVENT[]")[7].checked = true;
 
+//次画面へ
+document.querySelector("[class=submitBT]").click();　
