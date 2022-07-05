@@ -87,4 +87,18 @@ document.getElementsByClassName("validate[required,custom[email]]")[0].value = m
 document.getElementsByClassName("validate[required,equals[form_email]]")[0].value = mail;
 document.getElementsByClassName("showonly validate[required]")[0].value = doukou;
 document.querySelector("[id=check]").click();
-document.querySelector("[id=submit]").click();
+
+//ログ本体生成
+log = [sei + mei,sei_kana + mei_kana,post,pref + city + town + hn,age,job,tel,mail,doukou,'\n'];
+
+//ログをtxtファイルに保存
+var text_name = meado + '.txt';
+var blob = new Blob([log],{type:"text/plan"});
+var link = document.createElement('a');
+link.href = URL.createObjectURL(blob);
+link.download = text_name;link.click();
+
+//次画面へ
+setTimeout(function(){
+  document.querySelector("[id=submit]").click();
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
