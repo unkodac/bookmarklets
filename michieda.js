@@ -92,7 +92,7 @@ document.querySelector("[id=check]").click();
 log = [sei + mei,sei_kana + mei_kana,post,pref + city + town + hn,age,job,tel,mail,doukou,'\n'];
 
 //ログをtxtファイルに保存
-var text_name = meado + '.txt';
+var text_name = mail + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
