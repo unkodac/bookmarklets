@@ -104,4 +104,4 @@ link.download = text_name;link.click();
 //次画面へ
 setTimeout(function(){
   document.querySelector("[id=submit]").click();
-},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},2); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
