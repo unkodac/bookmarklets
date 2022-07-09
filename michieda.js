@@ -110,4 +110,6 @@ if(typeof riyuu != undifined){
   setTimeout(function(){
     document.querySelector("[id=submit]").click();
   },2); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+}else{
+  document.getElementsByClassName("validate[required]")[0].value = "シート番号を記入してください";
 }
