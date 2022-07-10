@@ -6,7 +6,7 @@ var riyuu_array = ['\u4e09\u6728\u76e3\u7763\u304c\u4ee5\u524d\u304b\u3089\u4f5c
 var riyuu = riyuu_array[sheet];
 if(document.getElementsByClassName("validate[required]")[0].value != ""){
   //性別選択
-  var sex = Math.floor(Math.random()*2);
+  var sex = Math.floor(Math.random()*3);
   //使用ドメイン入力
   var domains = ['@qrnail.com'];
 
