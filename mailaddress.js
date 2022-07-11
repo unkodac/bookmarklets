@@ -10,34 +10,34 @@ var day = (Math.floor(Math.random()*28)+1);
 if(birth_d < 10){
   birth_d = "0" + birth_d;
 }
-$mode = mt_rand(1, 8);
+var mode = Math.floor(Math.random()*8)
 switch ($mode) {
-    case 1:
-        $email = "{$romajiMei}{$year}{$month}{$day}@{$domain}";
-    break;
-    case 2:
-        $email = "{$romajiSei}{$year}{$month}{$day}@{$domain}";
-    break;
-    case 3:
-        $email = "{$romajiMei}{$month}{$day}@{$domain}";
-    break;
-    case 4:
-        $email = "{$romajiSei}{$month}{$day}@{$domain}";
-    break;
-    case 5:
-        $email = "{$romajiSei}{$romajiMei}{$random}@{$domain}";
-    break;
-    case 6:
-        $email = "{$romajiMei}{$romajiSei}{$random}@{$domain}";
-    break;
-    case 7:
-        $email = "{$romajiSei}{$romajiMei}{$month}{$day}@{$domain}";
-    break;
-    case 8:
-        $email = "{$romajiMei}{$romajiSei}{$month}{$day}@{$domain}";
-    break;
-    default:
-        $email = random(mt_rand(6, 10)) . "@{$domain}";
-    break;
+  case 1:
+      var email = "{$romajiMei}{$year}{$month}{$day}@{$domain}";
+  break;
+  case 2:
+      var email = "{$romajiSei}{$year}{$month}{$day}@{$domain}";
+  break;
+  case 3:
+      var email = "{$romajiMei}{$month}{$day}@{$domain}";
+  break;
+  case 4:
+      var email = "{$romajiSei}{$month}{$day}@{$domain}";
+  break;
+  case 5:
+      var email = "{$romajiSei}{$romajiMei}{$random}@{$domain}";
+  break;
+  case 6:
+      var email = "{$romajiMei}{$romajiSei}{$random}@{$domain}";
+  break;
+  case 7:
+      var email = "{$romajiSei}{$romajiMei}{$month}{$day}@{$domain}";
+  break;
+  case 8:
+      var email = "{$romajiMei}{$romajiSei}{$month}{$day}@{$domain}";
+  break;
+  default:
+      var email = random(mt_rand(6, 10)) . "@{$domain}";
+  break;
 }
-return $email;
+return email;
