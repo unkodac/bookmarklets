@@ -28,16 +28,16 @@ switch (mode) {
       var email = sei + mei + random;
   break;
   case 6:
-      var email = "{$romajiMei}{$romajiSei}{$random}@{$domain}";
+      var email = mei + sei + random;
   break;
   case 7:
-      var email = "{$romajiSei}{$romajiMei}{$month}{$day}@{$domain}";
+      var email = sei + mei + birth_m + birth_d;
   break;
   case 8:
-      var email = "{$romajiMei}{$romajiSei}{$month}{$day}@{$domain}";
+      var email = mei + sei + birth_m + birth_d;
   break;
   default:
-      var email = random(mt_rand(6, 10)) . "@{$domain}";
+      var email = 1;
   break;
 }
 return email;
