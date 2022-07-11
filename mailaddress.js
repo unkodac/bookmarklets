@@ -10,22 +10,22 @@ var day = (Math.floor(Math.random()*28)+1);
 if(birth_d < 10){
   birth_d = "0" + birth_d;
 }
+var random = (Math.floor(Math.random()*9000)+1000);
 var mode = Math.floor(Math.random()*8)
-switch ($mode) {
+switch (mode) {
   case 1:
-      var email = "{$romajiMei}{$year}{$month}{$day}@{$domain}";
-  break;
+      var email = mei + birth_y + birth_m + birth_d;
   case 2:
-      var email = "{$romajiSei}{$year}{$month}{$day}@{$domain}";
+      var email = sei + birth_y + birth_m + birth_d;
   break;
   case 3:
-      var email = "{$romajiMei}{$month}{$day}@{$domain}";
+      var email = mei + birth_m + birth_d;
   break;
   case 4:
-      var email = "{$romajiSei}{$month}{$day}@{$domain}";
+      var email = sei + birth_m + birth_d;
   break;
   case 5:
-      var email = "{$romajiSei}{$romajiMei}{$random}@{$domain}";
+      var email = sei + mei + random;
   break;
   case 6:
       var email = "{$romajiMei}{$romajiSei}{$random}@{$domain}";
