@@ -1,8 +1,11 @@
 var el = document.querySelectorAll("p");
 var i = 0;
-var array = [];
 while(i<100){
-  var a = el[i].outerHTML;
-  array.push(a);
+  var html = el[i].outerHTML;
+  if(html.includes('C3011')){
+    var pass = html.match(/location.href ='(.*)'" class=/);
+    console.log(html);
+    break;
+  }
   i++;
 }
