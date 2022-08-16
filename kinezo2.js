@@ -1,33 +1,52 @@
-//第1希望
-var seat1 = "B-18";
-//第2希望
-var seat2 = "B-17";
-//第3希望
-var seat3 = "B-16";
-//第4希望
-var seat4 = "C-18";
-//第5希望
-var seat5 = "C-17";
-//第6希望
-var seat6 = "C-16";
-
-if(document.getElementById("seat1").includes('seat-select')){
-  console.log(1);
-}else{
-  console.log(2);
+//空席の場合選択
+if(document.getElementById("B-18").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-18]").click();
+}else if(document.getElementById("B-17").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-17]").click();
+}else if(document.getElementById("B-16").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-16]").click();
+}else if(document.getElementById("B-15").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-15]").click();
+}else if(document.getElementById("B-14").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-14]").click();
+}else if(document.getElementById("B-13").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-13]").click();
+}else if(document.getElementById("B-12").outerHTML.includes('seat-select')){
+  document.querySelector("[id=B-12]").click();
+}else if(document.getElementById("C-18").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-18]").click();
+}else if(document.getElementById("C-17").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-17]").click();
+}else if(document.getElementById("C-16").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-16]").click();
+}else if(document.getElementById("C-15").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-15]").click();
+}else if(document.getElementById("C-14").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-14]").click();
+}else if(document.getElementById("C-13").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-13]").click();
+}else if(document.getElementById("C-12").outerHTML.includes('seat-select')){
+  document.querySelector("[id=C-12]").click();
+}else if(document.getElementById("A-18").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-18]").click();
+}else if(document.getElementById("A-17").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-17]").click();
+}else if(document.getElementById("A-16").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-16]").click();
+}else if(document.getElementById("A-15").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-15]").click();
+}else if(document.getElementById("A-14").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-14]").click();
+}else if(document.getElementById("A-13").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-13]").click();
+}else if(document.getElementById("A-12").outerHTML.includes('seat-select')){
+  document.querySelector("[id=A-12]").click();
 }
-document.querySelector("[id=A-3]").click();
-document.querySelector("[id=A-4]").click();
-document.querySelector("[id=A-5]").click();
-document.querySelector("[id=A-6]").click();
+
+//次画面へ
 document.getElementById("seatChoice").click();
 
 
 
 
-var check = document.getElementById("A-10");
-if(check.includes('seat-select')){
-  console.log(1);
-}else{
-  console.log(2);
-}
+
