@@ -45,8 +45,3 @@ if(document.getElementById("B-18").outerHTML.includes('seat-select')){
 
 //次画面へ
 document.getElementById("seatChoice").click();
-
-
-
-
-
