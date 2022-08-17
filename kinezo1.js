@@ -1,5 +1,5 @@
 //開催劇場
-var theater = /t-joy_kyoto(.*)type=event/
+var theater = /t-joy_kyoto(.*)type=event/;
 //公演名キーワード
 var keyword = 'ツルネ';
 //購入回
