@@ -1,4 +1,5 @@
 var el = document.querySelectorAll("h5,p");
+el = Array.from(el);
 var title = false;
 var i = 0;
 var offset = 0;
