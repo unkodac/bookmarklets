@@ -1,5 +1,4 @@
 var el = document.querySelectorAll("h5,p");
-el = Array.from(el);
 var title = false;
 var i = 0;
 var offset = 0;
@@ -17,7 +16,7 @@ while(true){
   if(html.includes('type=event')){
     offset++;
   }
-  if(offset==2){
+  if(offset==1){
     var pass = html.match(/shinjuku_wald9(.*)type=event/);
     document.location.href = pass[0];
     break;
