@@ -25,7 +25,7 @@ while(true){
     offset++;
   }
   if(offset == time){
-    var pass = html.match(thater);
+    var pass = html.match(theater);
     document.location.href = pass[0];
     break;
   }
