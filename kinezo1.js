@@ -1,3 +1,5 @@
+/*テストモード*/
+var testmode = true;
 /*開催劇場*/
 var theater = /t-joy_kyoto(.*)type=event/;
 /*公演名キーワード*/
