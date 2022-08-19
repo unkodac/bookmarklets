@@ -30,3 +30,4 @@ while(true){
     break;
   }
 }
+reg = new RegExp(abc);
