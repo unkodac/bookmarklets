@@ -1,8 +1,8 @@
-//開催劇場
+/*開催劇場*/
 var theater = /t-joy_kyoto(.*)type=event/;
-//公演名キーワード
+/*公演名キーワード*/
 var keyword = 'ツルネ';
-//購入回
+/*購入回*/
 var time = 2;
 
 var el = document.querySelectorAll("h5,p");
