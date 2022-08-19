@@ -3,7 +3,7 @@ var testmode = true;
 /*公演名キーワード*/
 var keyword = 'ハウ';
 /*購入回*/
-var time = 1;
+var times = 1;
 
 if(testmode){
   var type = 'type=film';
@@ -14,7 +14,6 @@ if(testmode){
 var el = document.querySelectorAll("h5,p");
 el = Array.from(el);
 var i = 0;
-var offset = 0;
 while(true){
   var text = el[0].outerText;
   if(text.includes(keyword)){
@@ -27,9 +26,9 @@ while(true){
   var html = el[i].outerHTML;
   i++;
   if(html.includes(type)){
-    offset++;
+    times--;
   }
-  if(offset == time){
+  if(times == 0){
     reg = new RegExp(location.pathname + '(.*)' + type);
     var path = html.match(reg);
     break;
