@@ -1,7 +1,7 @@
 /*テストモード*/
 var testmode = true;
-/*開催劇場*/
-var theater = 't-joy_kyoto';
+/*開催劇場
+var theater = 't-joy_kyoto';*/
 /*公演名キーワード*/
 var keyword = 'ツルネ';
 /*購入回*/
@@ -33,7 +33,7 @@ while(true){
     offset++;
   }
   if(offset == time){
-    reg = new RegExp(theater + '(.*)' + type);
+    reg = new RegExp(location.pathname + '(.*)' + type);
     var pass = html.match(reg);
     document.location.href = pass[0];
     break;
