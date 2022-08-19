@@ -1,9 +1,9 @@
 /*テストモード*/
 var testmode = true;
 /*公演名キーワード*/
-var keyword = 'ツルネ';
+var keyword = 'ハウ';
 /*購入回*/
-var time = 2;
+var time = 1;
 
 if(testmode){
   var type = 'type=film';
@@ -13,13 +13,12 @@ if(testmode){
 
 var el = document.querySelectorAll("h5,p");
 el = Array.from(el);
-var title = false;
 var i = 0;
 var offset = 0;
-while(title == false){
+while(true){
   var text = el[0].outerText;
   if(text.includes(keyword)){
-    title = true;
+    break;
   }else{
     el.shift();
   }
