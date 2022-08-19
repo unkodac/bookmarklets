@@ -33,8 +33,7 @@ while(true){
   if(offset == time){
     reg = new RegExp(location.pathname + '(.*)' + type);
     var path = html.match(reg);
-    document.location.href = path[0];
     break;
   }
 }
-
+document.location.href = path[0];
