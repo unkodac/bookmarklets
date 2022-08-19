@@ -1,11 +1,17 @@
 /*テストモード*/
 var testmode = true;
 /*開催劇場*/
-var theater = /t-joy_kyoto(.*)type=event/;
+var theater = 't-joy_kyoto';
 /*公演名キーワード*/
 var keyword = 'ツルネ';
 /*購入回*/
 var time = 2;
+
+if(testmode){
+  var type = 'type=film';
+}else{
+  var type = 'type=event';
+}
 
 var el = document.querySelectorAll("h5,p");
 el = Array.from(el);
@@ -23,13 +29,14 @@ while(title == false){
 while(true){
   var html = el[i].outerHTML;
   i++;
-  if(html.includes('type=event')){
+  if(html.includes(type)){
     offset++;
   }
   if(offset == time){
-    var pass = html.match(theater);
+    reg = new RegExp(theater + '(.*)' + type);
+    var pass = html.match(reg);
     document.location.href = pass[0];
     break;
   }
 }
-reg = new RegExp(abc);
+
