@@ -24,11 +24,20 @@ var mon = (Math.floor(Math.random()*12)+1);
 var day = (Math.floor(Math.random()*28)+1);
 
 //データ入力
+const changeEvent = new Event('input');
 document.getElementById("register-form_pc_input_0").value = sei + mei;
+document.getElementById("register-form_pc_input_0").dispatchEvent(changeEvent);
 document.getElementById("email").value = mail;
+document.getElementById("email").dispatchEvent(changeEvent);
 document.getElementById("register-form_pc_input_1").value = pass;
+document.getElementById("register-form_pc_input_1").dispatchEvent(changeEvent);
 document.getElementById("register-form_pc_input_2").value = pass;
+document.getElementById("register-form_pc_input_2").dispatchEvent(changeEvent);
 document.getElementById("birth-year-field").value = year;
+document.getElementById("birth-year-field").dispatchEvent(changeEvent);
 document.getElementById("birth-month-field").value = mon;
+document.getElementById("birth-month-field").dispatchEvent(changeEvent);
 document.getElementById("birth-day-field").value = day;
+document.getElementById("birth-day-field").dispatchEvent(changeEvent);
 document.getElementById("register-form_pc_select_0").value = "male";
+document.getElementById("register-form_pc_select_0").dispatchEvent(changeEvent);
