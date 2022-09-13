@@ -12,3 +12,7 @@ var pass = Math.random().toString(36).slice(-8);
 document.getElementById("email").value = mail;
 document.getElementById("password").value = pass;
 document.getElementById("repassword").value = pass;
+const changeEvent = new Event('change');
+document.getElementById("ckb").checked = true;
+document.getElementById("ckb").dispatchEvent(changeEvent);
+document.querySelector("[name=send]").click();
