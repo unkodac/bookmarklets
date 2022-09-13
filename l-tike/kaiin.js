@@ -15,4 +15,17 @@ document.getElementById("repassword").value = pass;
 const changeEvent = new Event('change');
 document.getElementById("ckb").checked = true;
 document.getElementById("ckb").dispatchEvent(changeEvent);
+
+//ログ本体生成
+log = [mail,pass,'\n'];
+
+//ログをtxtファイルに保存
+var text_name = mail + '.txt';
+var blob = new Blob([log],{type:"text/plan"});
+var link = document.createElement('a');
+link.href = URL.createObjectURL(blob);
+link.download = text_name;
+link.click();
+
+//次画面へ
 document.querySelector("[name=send]").click();
