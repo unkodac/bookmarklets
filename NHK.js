@@ -32,6 +32,7 @@ var tel3 = Math.floor(Math.random()*9000) + 1000;
 var post_pic = Math.floor(Math.random()*array_post.length);
 var pref = "大阪府";
 var post = array_post[post_pic];
+post = String(post);
 var post1 = post.slice(0,3);
 var post2 = post.slice(-4);
 var city = array_city[post_pic];
@@ -57,3 +58,25 @@ document.getElementById("mail_address_pc22").value = mail2;
 document.getElementById("phone_number1").value = tel1;
 document.getElementById("phone_number2").value = tel2;
 document.getElementById("phone_number3").value = tel3;
+document.getElementById("kyu_post-1").value = post1;
+document.getElementById("kyu_post-2").value = post2;
+document.getElementById("kyu_todohuken").value = pref;
+document.getElementById("kyu_shikutyoson").value = city;
+document.getElementById("kyu_banchi").value = town + hn;
+document.getElementById("birth_date1").value = year;
+document.getElementById("birth_date2").value = mon;
+document.getElementById("birth_date3").value = day;
+document.getElementById("age").value = age;
+
+//ログ本体生成
+log = [sei,mei,mail1 + "@qrnail.com",String(tel1) + String(tel2) + String(tel3),pref + city + town + hn,String(year) + String(mon) + String(day),'\n'];
+
+//ログをtxtファイルに保存
+var text_name = mail1 + "@qrnail.com" + '.txt';
+var blob = new Blob([log],{type:"text/plan"});
+var link = document.createElement('a');
+link.href = URL.createObjectURL(blob);
+link.download = text_name;link.click();
+
+//次画面へ
+formSubmit();
