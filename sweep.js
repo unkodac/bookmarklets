@@ -16,5 +16,5 @@ var domain = domains[Math.floor(Math.random()*domains.length)];
 var mail = Math.random().toString(36).slice(-1*(Math.floor(Math.random()*6) + 5)) + domain;
 
 //データ入力
-document.getElementById("sw__login_name").value = sei + " " + mei;
-document.getElementById("sw__login_email").value = mail;
+document.getElementsByName("sw__login_name")[0].value = sei + " " + mei;
+document.getElementsByName("sw__login_email")[0].value = mail;
