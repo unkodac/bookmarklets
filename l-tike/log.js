@@ -1,28 +1,20 @@
-//申込ログ採取ツール[共用]
+//申込ログ採取ツール
 
 //使用者
-var user = "共用";
-//PCで使用するか
-var pc = false;
+var user = "カネマキ";
 
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
-if (pc == true){
-  var a = el[5].outerText;
-  var b = el[6].outerText;
-  var c = el[11].outerText;
-}else{
-  var a = el[2].outerText;
-  var b = el[4].outerText;
-  var c = el[10].outerText;
-}
-var d = el[14].outerText;
-var e = el[16].outerText;
-var f = el[17].outerText;
-var g = el[20].outerText;
-var h = el[23].outerText;
-var i = el[25].outerText;
-var j = el[26].outerText;
+var a = el[2].outerText;
+var b = el[4].outerText;
+var c = el[10].outerText;
+var d = el[24].outerText;
+var e = el[26].outerText;
+var f = el[27].outerText;
+var g = el[30].outerText;
+var h = el[33].outerText;
+var i = el[35].outerText;
+var j = el[42].outerText;
 
 //改行を取り除く
 var a_ = a.split('\n');
@@ -54,9 +46,9 @@ var pass = j_.join('');
 
 //IPアドレス取得
 async function getip(){
-    const API_URL = 'https://api.ipify.org/?format=json';
-    const res = await fetch(API_URL);
-    const data = await res.json();
+    var API_URL = 'https://api.ipify.org/?format=json';
+    var res = await fetch(API_URL);
+    var data = await res.json();
     ip = data.ip;
     return ip;
 }
@@ -68,7 +60,8 @@ var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + g
            getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
 
 //ログ本体生成
-log = [kaijou,nichiji,maisuu,meado,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
+setTimeout(function(){
+log = [kaijou,nichiji,maisuu,meado,,denwa,uketori,shiharai,shimei,shimei_kana,pass,date,ip,user,'\n'];
 
 //ログをtxtファイルに保存
 var text_name = meado + '.txt';
@@ -78,11 +71,7 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();
 
 //次画面へ
-//if (pc == true){
-//  var sleep = 0:
-//}else{
-//  var sleep = 2000;
-//}
-//setTimeout(function(){
-//document.querySelector("[name=ENTRY_FIX]").click();
-//},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+setTimeout(function(){
+document.querySelector("[name=ENTRY_FIX]").click();
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},1500);
