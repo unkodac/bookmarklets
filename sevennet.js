@@ -48,6 +48,8 @@ document.getElementById("input-05").value = mei;
 document.getElementById("input-06").value = sei_kana;
 document.getElementById("input-07").value = mei_kana;
 document.getElementById("input-10_1").value = String(birth_y) + String(birth_m) + String(birth_d);
+document.getElementById("addressPostalCodeInput").value = post;
+document.getElementById("input-16").value = hn;
 document.getElementById("input-18").value = tel1;
 document.getElementById("input-19").value = tel2;
 document.getElementById("input-20").value = tel3;
@@ -57,6 +59,18 @@ document.getElementById("input-05").dispatchEvent(changeEvent);
 document.getElementById("input-06").dispatchEvent(changeEvent);
 document.getElementById("input-07").dispatchEvent(changeEvent);
 document.getElementById("input-10_1").dispatchEvent(changeEvent);
+document.getElementById("addressPostalCodeInput").dispatchEvent(changeEvent);
+document.getElementById("input-16").dispatchEvent(changeEvent);
 document.getElementById("input-18").dispatchEvent(changeEvent);
 document.getElementById("input-19").dispatchEvent(changeEvent);
 document.getElementById("input-20").dispatchEvent(changeEvent);
+
+//住所自動入力
+setTimeout(function(){
+
+
+//次画面へ
+setTimeout(function(){
+document.querySelector("[name=ENTRY_FIX]").click();
+},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+},1500);
