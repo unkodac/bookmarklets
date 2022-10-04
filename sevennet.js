@@ -36,7 +36,7 @@ var post = array_post[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
 //電話番号生成
-tel1 = "0" + (Math.floor(Math.random()*3)+7) + "0";
+tel1 = "0" + (Math.floor(Math.random()*3)+7);
 tel2 = Math.floor(Math.random()*9000)+1000;
 tel3 = Math.floor(Math.random()*9000)+1000;
 
