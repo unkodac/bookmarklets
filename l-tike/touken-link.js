@@ -1,10 +1,10 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://w1.red.onlineticket.jp/sf/tkt101/detail/3636800001?P6=z05';
+form.action = 'https://l-tike.com/st1/3mikseocy9stpu5smbxf';
 var input = document.createElement('input');
 input.type = 'hidden';
-input.name = 'keyword';
-input.value = '6432';
+input.name = 'CERK';
+input.value = '19e6a10c1f51659fd9cddff6cda00ff2';
 form.appendChild(input);
 form.submit();
