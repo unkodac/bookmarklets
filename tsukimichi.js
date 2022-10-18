@@ -18,3 +18,4 @@ document.getElementById("c_q31").value = data[(sheet*9) + 7];
 document.getElementById("c_q33_areacode").value = tel[0];
 document.getElementById("c_q33_citycode").value = tel[1];
 document.getElementById("c_q33_subscribercode").value = tel[2];
+document.getElementById("wcf5start").click();
