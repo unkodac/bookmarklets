@@ -28,15 +28,41 @@ getip();
 
 //日時取得
 var getdate = new Date();
-var date = getdate.getFullYear() + "年" + (getdate.getMonth() + 1)  + "月" + getdate.getDate() + "日" + 
-           getdate.getHours() + "時" + getdate.getMinutes() + "分" + getdate.getSeconds() + "秒";
+var year = String(getdate.getFullYear());
+if((getdate.getMonth() + 1) < 10){
+    var month = "0" + String(getdate.getMonth() + 1);
+}else{
+    var month = String(getdate.getMonth() + 1);
+}
+if(getdate.getDate() < 10){
+    var day = "0" + String(getdate.getDate());
+}else{
+    var day = String(getdate.getDate());
+}
+if(getdate.getHours() < 10){
+    var hours = "0" + String(getdate.getHours());
+}else{
+    var hours = String(getdate.getHours());
+}
+if(getdate.getMinutes() < 10){
+    var minutes = "0" + String(getdate.getMinutes());
+}else{
+    var minutes = String(getdate.getMinutes());
+}
+if(getdate.getSeconds() < 10){
+    var seconds = "0" + String(getdate.getSeconds());
+}else{
+    var seconds = String(getdate.getSeconds());
+}
+
+var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes + "分" + seconds + "秒";
 
 //ログ本体生成
 setTimeout(function(){
 log = [kaijou,nichiji,maisuu,meado,,denwa,uketori,shiharai,shimei,shimei_kana,birthday,address,pass,date,ip,user,'\n'];
 
 //ログをtxtファイルに保存
-var text_name = String(getdate.getMonth() + 1) + String(getdate.getDate()) + String(getdate.getHours()) + String(getdate.getMinutes()) + String(getdate.getSeconds()) + meado + '.txt';
+var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
