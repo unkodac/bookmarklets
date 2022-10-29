@@ -50,7 +50,3 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 //ログ本体生成
 var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
 
-//ログをtxtファイルに保存
-setTimeout(function(){
-    navigator.clipboard.writeText(log);
-}1500,);
