@@ -4,17 +4,6 @@ var user = "高森";
 //申込履歴要素抽出
 var el = document.querySelectorAll("table td,th,p");
 var kaijou = el[2].outerText.trim();
-var nichiji = el[4].outerText.replace(/\n|　/g,"");
-var maisuu = el[10].outerText.replace(/\n| /g,"");
-var meado = el[20].outerText.replace(/\n/g,"");
-var denwa = el[48].outerText.replace(/\n/g,"");
-var uketori = el[23].outerText.replace(/\n/g,"");
-var shiharai = el[28].outerText.replace(/\n/g,"");
-var shimei = el[31].outerText.replace(/\n/g,"");
-var shimei_kana = el[33].outerText.replace(/\n/g,"");
-var birthday = el[35].outerText.replace(/\n/g,"");
-var address = el[39].outerText.replace(/\n/g,"");
-var pass = el[40].outerText.replace(/\n/g,"");
 
 //日時取得
 var getdate = new Date();
@@ -48,5 +37,5 @@ if(getdate.getSeconds() < 10){
 var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes + "分" + seconds + "秒";
 
 //ログ本体生成
-var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
-
+var log = kaijou + '\t' + date + '\t\t' + user;
+navigator.clipboard.writeText(log);
