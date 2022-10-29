@@ -63,8 +63,6 @@ var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denw
 
 //ログをtxtファイルに保存
 var logs = prompt("テキストをシートにコピペしてください。",log);
-logs.select();
-navigator.clipboard.writeText(logs);
 /*var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
@@ -72,5 +70,5 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();*/
 
 //次画面へ
-//document.querySelector("[name=ENTRY_FIX]").click();
+document.querySelector("[name=ENTRY_FIX]").click();
 },1500);
