@@ -60,6 +60,6 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();*/
 
 //次画面へ
-setTimeout(function(){
+/*setTimeout(function(){
     document.querySelector("[name=ENTRY_FIX]").click();
-},1500);
+},1500);*/
