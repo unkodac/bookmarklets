@@ -62,7 +62,8 @@ setTimeout(function(){
 log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t' + ip + '\t' + user];
 
 //ログをtxtファイルに保存
-prompt("テキストをシートにコピペしてください。",log);
+var logs = prompt("テキストをシートにコピペしてください。",log);
+logs.select();
 /*var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
