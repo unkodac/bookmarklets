@@ -4,4 +4,4 @@ var user = "高森";
 
 //ログ本体生成
 var log = user;
-navigator.clipboard.writeText(log);
+prompt("テキストをシートにコピペしてください。",log);
