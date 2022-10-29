@@ -16,7 +16,7 @@ var birthday = el[35].outerText.replace(/\n/g,"");
 var address = el[39].outerText.replace(/\n/g,"");
 var pass = el[40].outerText.replace(/\n/g,"");
 
-//IPアドレス取得
+/*//IPアドレス取得
 async function getip(){
     var API_URL = 'https://api.ipify.org/?format=json';
     var res = await fetch(API_URL);
@@ -25,7 +25,7 @@ async function getip(){
     return ip;
 }
 getip();
-
+*/
 //日時取得
 var getdate = new Date();
 var year = String(getdate.getFullYear());
@@ -59,7 +59,7 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 
 //ログ本体生成
 setTimeout(function(){
-var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t' + ip + '\t' + user;
+var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t' + '\t' + user;
 
 //ログをtxtファイルに保存
 var logs = prompt("テキストをシートにコピペしてください。",log);
