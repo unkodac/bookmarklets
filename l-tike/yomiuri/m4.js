@@ -38,4 +38,15 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 
 //ログ本体生成
 var log = kaijou + '\t' + date + '\t\t' + user;
-navigator.clipboard.writeText(log);
+function copyToClipBoard(){
+  var anyText= log;
+  var textBox = document.createElement("textarea");
+  textBox.setAttribute("id", "target");
+  textBox.setAttribute("type", "hidden");
+  textBox.textContent = anyText;
+  document.body.appendChild(textBox);
+  textBox.select();
+  document.execCommand('copy');  
+  document.body.removeChild(textBox);
+}
+copyToClipBoard();
