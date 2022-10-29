@@ -48,11 +48,21 @@ if(getdate.getSeconds() < 10){
 var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes + "分" + seconds + "秒";
 
 //ログ本体生成
-setTimeout(function(){
 log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
 
 //ログをtxtファイルに保存
-navigator.clipboard.writeText(log);
+function copyToClipBoard(){
+  var anyText= log;
+  var textBox = document.createElement("textarea");
+  textBox.setAttribute("id", "target");
+  textBox.setAttribute("type", "hidden");
+  textBox.textContent = anyText;
+  document.body.appendChild(textBox);
+  textBox.select();
+  document.execCommand('copy');  
+  document.body.removeChild(textBox);
+}
+copyToClipBoard();
 /*
 var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
@@ -62,4 +72,3 @@ link.download = text_name;link.click();*/
 
 //次画面へ
 document.querySelector("[name=ENTRY_FIX]").click();
-},1500);
