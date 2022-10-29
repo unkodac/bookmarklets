@@ -16,16 +16,6 @@ var birthday = el[35].outerText.replace(/\n/g,"");
 var address = el[39].outerText.replace(/\n/g,"");
 var pass = el[40].outerText.replace(/\n/g,"");
 
-//IPアドレス取得
-async function getip(){
-    var API_URL = 'https://api.ipify.org/?format=json';
-    var res = await fetch(API_URL);
-    var data = await res.json();
-    ip = data.ip;
-    return ip;
-}
-getip();
-
 //日時取得
 var getdate = new Date();
 var year = String(getdate.getFullYear());
@@ -59,17 +49,26 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 
 //ログ本体生成
 setTimeout(function(){
-log = [kaijou,nichiji,maisuu,meado,,denwa,uketori,shiharai,shimei,shimei_kana,birthday,address,pass,date,ip,user,'\n'];
+log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
 
 //ログをtxtファイルに保存
-var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
+function copyToClipBoard(){
+  var anyText= log;
+  var textBox = document.createElement("textarea");
+  textBox.setAttribute("id", "target");
+  textBox.setAttribute("type", "hidden");
+  textBox.textContent = anyText;
+  document.body.appendChild(textBox);
+  textBox.select();
+  document.execCommand('copy');  
+  document.body.removeChild(textBox);
+}
+copyToClipBoard();
+/*var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
-link.download = text_name;link.click();
+link.download = text_name;link.click();*/
 
 //次画面へ
-setTimeout(function(){
 document.querySelector("[name=ENTRY_FIX]").click();
-},2000); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
-},1500);
