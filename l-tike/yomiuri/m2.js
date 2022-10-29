@@ -16,7 +16,7 @@ var array_town = ['\u7db2\u5cf6\u753a','\u5185\u4ee3\u753a','\u7247\u753a','\u6b
 var pass = Math.random().toString(36).slice(-4);
 
 //電話番号選択
-var sheet = document.forms.ttg100.elements.PWD.value;
+var sheet = prompt("シートの行番号を入力してください。");
 var tel = array_tel[sheet - 2];
 
 //名前生成
