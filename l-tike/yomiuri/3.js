@@ -49,7 +49,7 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 
 //ログ本体生成
 setTimeout(function(){
-log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
+var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t\t' + user;
 
 //ログをtxtファイルに保存
 function copyToClipBoard(){
@@ -71,4 +71,6 @@ link.href = URL.createObjectURL(blob);
 link.download = text_name;link.click();*/
 
 //次画面へ
-document.querySelector("[name=ENTRY_FIX]").click();
+setTimeout(function(){
+    document.querySelector("[name=ENTRY_FIX]").click();
+},1500);
