@@ -72,5 +72,5 @@ link.download = text_name;link.click();*/
 
 //次画面へ
 setTimeout(function(){
-    document.querySelector("[name=ENTRY_FIX]").click();
+    //document.querySelector("[name=ENTRY_FIX]").click();
 },1500);
