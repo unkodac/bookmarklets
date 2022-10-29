@@ -59,7 +59,7 @@ var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes 
 
 //ログ本体生成
 setTimeout(function(){
-var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t' + ip + '\t' + user];
+var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denwa + '\t' + uketori + '\t' + shiharai + '\t' + shimei + '\t' + shimei_kana + '\t' + birthday + '\t' + address + '\t' + pass + '\t' + date + '\t' + ip + '\t' + user;
 
 //ログをtxtファイルに保存
 var logs = prompt("テキストをシートにコピペしてください。",log);
