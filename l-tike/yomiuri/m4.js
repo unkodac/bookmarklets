@@ -37,7 +37,7 @@ if(getdate.getSeconds() < 10){
 var date = year + "年" + month + "月" + day + "日" + hours + "時" + minutes + "分" + seconds + "秒";
 
 //ログ本体生成
-var log = kaijou + '\t' + date + '\t\t' + user;
+var log = user;
 function copyToClipBoard(){
   var anyText= log;
   var textBox = document.createElement("textarea");
