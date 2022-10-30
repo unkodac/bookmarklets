@@ -11,7 +11,7 @@ var array_sei = ['sato','suzuki','takahashi','tanaka','ito','watanabe','yamamoto
 var array_mei = ['sakura','misaki','rin','haruna','nanami','miku','kanon','yui','momoka','hinata','miwa','kotomi','ayaka','ayaka','miyu','kokoro','mitsuki','ai','moe','kanade','manami','kanna','airi','yuina','yuka','haruka','chihiro','aika','ami','rena','anzu','riko','kana','rina','megumi','kurumi','aina','mao','maho','kaho','kyoko','madoka','sayaka','mami','yuna','yua','yume','rino','ayano','nana','nao','saki','akari','yuri','mei','risa','ayasa','asuka','yukari','midori','hazuki','hana','eiko','yuko','yuki','mariko','mariko','miharu','ayumi','ami','natsuki','kaori','kaoruko','sakurako','hinako','mizuki','yoshiko','chika','honoka','seiko','yoko','yuka','takako','masako','karen','kiyomi','makiko','maki','kanae','sanae','tomoko','akiko','yuriko','kimi','anri','eriko','kako','fumika','junko','maiko','rieko','yumi','eri','nozomi','hiroe','yuiko','reiko','ritsuko','yuri','rie','emi','arisa','mika','momoe','yurika','mai','reika','naoko','shizuko','shizue','minami','shino','kayoko','saeko','hiromi','saori','nao','keiko','kyoka','anna','mana','kazumi','sayuri','satomi','sachiko','sachi','michi','hitomi','ruka','azusa','atsuko','masami','sumiko','sumie','kazue','noriko','mayu','maya','shizuki','asumi'];
 
 //電話番号選択
-var sheet = var sheet = prompt("シートの行番号を入力してください。");
+var sheet = prompt("シートの行番号を入力してください。");
 var tel = array_tel[sheet - 2];
 
 //メアド生成
