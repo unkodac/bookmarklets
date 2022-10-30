@@ -63,7 +63,6 @@ var log = kaijou + '\t' + nichiji + '\t' + maisuu + '\t' + meado + '\t\t' + denw
 
 //ログをtxtファイルに保存
 var logs = prompt("テキストをシートにコピペしてください。",log);
-logs.select();
 /*var text_name = year + month + day + hours + minutes + seconds + meado + '.txt';
 var blob = new Blob([log],{type:"text/plan"});
 var link = document.createElement('a');
