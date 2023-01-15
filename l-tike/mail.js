@@ -26,7 +26,7 @@ if(mailtype == 0){
 }else{
   mail = address_rand;
 }
-mail = prompt("mail");
+var mail = prompt("mail");
 //メアド入力
 document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = mail;
 
