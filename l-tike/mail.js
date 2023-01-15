@@ -28,10 +28,10 @@ if(mailtype == 0){
 }
 
 //メアド入力
-document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = mail;
+//document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = mail;
 
 //電話番号入力
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
 
 //次ページへ
-document.querySelector("[name=NEXT]").click();
+//document.querySelector("[name=NEXT]").click();
