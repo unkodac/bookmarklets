@@ -91,7 +91,7 @@ document.querySelector("[name=NEXT_BUTTON]").click();　*/
     var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
     //データ入力
-    document.querySelector("[id=PAYMENT_MTHD_SEL-03]").checked = true;
+   // document.querySelector("[id=PAYMENT_MTHD_SEL-03]").checked = true;
     document.forms.ttg100.elements.PWD.value = pass;
     document.forms.ttg100.elements.PWD_CNF.value = pass;
     document.forms.ttg100.elements.APLCT_FIRST_NAME.value = sei;
