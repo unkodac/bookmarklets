@@ -20,6 +20,7 @@ var age2 = data[12];
 var job2 = data[13];
 var tel2 = data[14];
 var message = data[16];
+const inputEvent = new Event("change", {bubbles: true});
 document.querySelectorAll("[name=name]")[0].value = name1;
 document.querySelectorAll("[name=name_f]")[0].value = kana1;
 document.querySelectorAll("[name=zip]")[0].value = post1;
