@@ -25,6 +25,6 @@ if(mailtype == 0){
   mail = address_rand;
 }
 
-document.getElementById("firstname").checked = mei;
-document.getElementById("lastname").checked = sei;
-document.getElementById("email").checked = mail;
+document.getElementById("firstname").value = mei;
+document.getElementById("lastname").value = sei;
+document.getElementById("email").value = mail;
