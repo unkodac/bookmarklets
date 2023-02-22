@@ -25,6 +25,6 @@ if(mailtype == 0){
   mail = address_rand;
 }
 
-document.querySelectorAll("input.touched")[0].value = mei;
-document.querySelectorAll("input.form-control")[0].value = sei;
-document.querySelectorAll("input.pristine")[0].value = mail;
+document.querySelectorAll("input.form-control")[0].value = mei;
+document.querySelectorAll("input.form-control")[1].value = sei;
+document.querySelectorAll("input.form-control")[2].value = mail;
