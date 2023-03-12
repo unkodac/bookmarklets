@@ -69,7 +69,6 @@ document.querySelectorAll("select")[1].value = (Math.floor(Math.random()*19)+10)
 document.querySelectorAll("select")[2].value = 13;
 document.querySelectorAll("input")[40].value = post1;
 document.querySelectorAll("input")[43].value = post2;
-document.getElementsByName(pref_name)[0].value = pref;
 document.querySelectorAll("input")[48].value = city + town;
 document.querySelectorAll("input")[51].value = hn;
 if(shop == "famima"){
