@@ -54,59 +54,19 @@ var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
-//テキストボックスのname属性の値を取得
-var array_name = document.querySelectorAll("span");
-
-var sei_html = array_name[6].outerHTML;
-var sei_name = "uji.model." + sei_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var mei_html = array_name[7].outerHTML;
-var mei_name = "uji.model." + mei_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var sei_kana_html = array_name[11].outerHTML;
-var sei_kana_name = "uji.model." + sei_kana_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var mei_kana_html = array_name[12].outerHTML;
-var mei_kana_name = "uji.model." + mei_kana_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var tel_html = array_name[17].outerHTML;
-var tel_name = "uji.model." + tel_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var mail_html = array_name[22].outerHTML;
-var mail_name = "uji.model." + mail_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var mail_conf_html = array_name[26].outerHTML;
-var mail_conf_name = "uji.model." + mail_conf_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var post_name_html = array_name[31].outerHTML;
-var post1_name = "uji.model." + post_name_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var post_name = Number(post_name_html.match(/[0-9]{4,7}/g)[0]) + 2;
-var post2_str = String(post_name);
-var post2_name = "uji.model." + post2_str + ".value";
-
-var pref_html = array_name[35].outerHTML;
-var pref_name = "uji.model." + pref_html.match(/[0-9]{4,7}/g)[0] + ".combo";
-
-var city_html = array_name[37].outerHTML;
-var city_name = "uji.model." + city_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
-var hn_html = array_name[40].outerHTML;
-var hn_name = "uji.model." + hn_html.match(/[0-9]{4,7}/g)[0] + ".value";
-
 //データ入力
-document.getElementsByName(sei_name)[0].value = sei;
-document.getElementsByName(mei_name)[0].value = mei;
-document.getElementsByName(sei_kana_name)[0].value = sei_kana;
-document.getElementsByName(mei_kana_name)[0].value = mei_kana;
-document.getElementsByName(tel_name)[0].value = tel;
-document.getElementsByName(mail_name)[0].value = mail;
-document.getElementsByName(mail_conf_name)[0].value = mail;
-document.getElementsByName(post1_name)[0].value = post1;
-document.getElementsByName(post2_name)[0].value = post2;
+document.querySelectorAll("input")[7].value = sei;
+document.querySelectorAll("input")[10].value = mei;
+document.querySelectorAll("input")[13].value = sei_kana;
+document.querySelectorAll("input")[16].value = mei_kana;
+document.querySelectorAll("input")[19].value = tel;
+document.querySelectorAll("input")[22].value = mail;
+document.querySelectorAll("input")[25].value = mail;
+document.querySelectorAll("input")[40].value = post1;
+document.querySelectorAll("input")[43].value = post2;
 document.getElementsByName(pref_name)[0].value = pref;
-document.getElementsByName(city_name)[0].value = city + town;
-document.getElementsByName(hn_name)[0].value = hn;
+document.querySelectorAll("input")[48].value = city + town;
+document.querySelectorAll("input")[51].value = hn;
 if(shop == "famima"){
   document.getElementById("i12").checked = true;
 }else{
