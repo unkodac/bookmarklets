@@ -1,7 +1,7 @@
 //eplus名義入力画面自動化
 
 //性別選択
-var sex = "otoko";　//otoko,onna
+var sex = "onna";　//otoko,onna
 //使用ドメイン入力
 var domains = ['@qrnail.com'];
 //発券店舗
@@ -62,6 +62,11 @@ document.querySelectorAll("input")[16].value = mei_kana;
 document.querySelectorAll("input")[19].value = tel;
 document.querySelectorAll("input")[22].value = mail;
 document.querySelectorAll("input")[25].value = mail;
+document.querySelectorAll("input")[29].checked = true;
+document.querySelectorAll("input")[33].value = Math.floor(Math.random()*10)+1990;
+document.querySelectorAll("select")[0].value = "0" + (Math.floor(Math.random()*10)+1);
+document.querySelectorAll("select")[1].value = (Math.floor(Math.random()*19)+10);
+document.querySelectorAll("select")[2].value = 13;
 document.querySelectorAll("input")[40].value = post1;
 document.querySelectorAll("input")[43].value = post2;
 document.getElementsByName(pref_name)[0].value = pref;
@@ -73,3 +78,4 @@ if(shop == "famima"){
   document.getElementById("i2").checked = true;
 }
 document.getElementById("i8").checked = true;
+getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
