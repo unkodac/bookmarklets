@@ -1,10 +1,10 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://w1.red.onlineticket.jp/sf/tkt101/detail/3827700001?P6=z07';
+form.action = 'https://w1.red.onlineticket.jp/sf/tkt101/detail/3827700002?P6=z07';
 var input = document.createElement('input');
 input.type = 'hidden';
 input.name = 'keyword';
-input.value = '9005';
+input.value = '9261';
 form.appendChild(input);
 form.submit();
