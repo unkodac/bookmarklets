@@ -1,11 +1,3 @@
-//＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）- 認証
-    if(document.URL.indexOf("https://sp1.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）" && document.querySelectorAll("span.this-page")[0].outerText == "認証"){
-        document.querySelectorAll("a")[2].click();
-    }
-    //利用規約の承認
-    if(document.URL.indexOf("https://sp1.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "利用規約の承認"){
-        document.querySelectorAll("a")[1].click();
-    }
     //ご利用者情報設定
     if(document.URL.indexOf("https://sp1.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "ご利用者情報設定"){
         //性別選択
@@ -89,25 +81,9 @@
         document.getElementById("i8").checked = true;
         document.querySelectorAll("a")[4].click();
     }
-    //ご利用者情報確認
-    if(document.URL.indexOf("https://sp2.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "ご利用者情報確認"){
-        chrome.storage.sync.set({
-            "eplusname": document.querySelectorAll("td")[2].outerText,
-            "eplusnamekana": document.querySelectorAll("td")[3].outerText,
-            "eplustel": document.querySelectorAll("td")[4].outerText,
-            "eplusmail": document.querySelectorAll("td")[5].outerText,
-            "eplusbirth": document.querySelectorAll("td")[7].outerText,
-            "eplusaddress": document.querySelectorAll("td")[8].outerText
-        });
-        document.querySelectorAll("a")[0].click();
-    }
     //＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）- 申込み
     if(document.URL.indexOf("https://sp1.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）" && document.querySelectorAll("span.this-page")[0].outerText == "申込み"){
         document.querySelectorAll("select")[1].value = "2102/999/01";
         document.querySelectorAll("select")[2].value = "001/1";
         document.querySelectorAll("a")[4].click();
-    }
-    //＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）- 確認
-    if(document.URL.indexOf("https://sp2.red.onlineticket.jp/tkt101/main.jsp") != -1 && document.querySelectorAll("h1.title-appli-general")[0].outerText == "＜ジャニーズジュニア情報局＞ＦＣ会員受付　（抽選・後払）" && document.querySelectorAll("span.this-page")[0].outerText == "確認"){
-        document.querySelectorAll("a")[2].click();
     }
