@@ -3,7 +3,7 @@
 //性別選択
 var sex = "onna";　//otoko,onna
 //使用ドメイン入力
-var domains = ['@qrnail.com'];
+var domains = ["@qrnail.com","@lclond.com","@ymoblie.jp"];
 //発券店舗
 var shop = "famima";　//famima,seven
 
@@ -43,6 +43,7 @@ var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random(
 //メアド生成
 var ketasuu = Math.floor(Math.random()*6);
 var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains;
+var mail = prompt("メールアドレスを入力してください。");
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
