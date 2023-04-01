@@ -47,7 +47,7 @@ var mail = prompt("メールアドレスを入力してください。");
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
-var pref = "13";
+var pref = "40";
 var post = array_post[post_pic];
 var post1 = post.slice(0,3);
 var post2 = post.slice(-4);
@@ -65,7 +65,7 @@ document.querySelectorAll("input")[22].value = mail;
 document.querySelectorAll("input")[25].value = mail;
 document.querySelectorAll("input")[29].checked = true;
 document.querySelectorAll("input")[33].value = Math.floor(Math.random()*10)+1990;
-document.querySelectorAll("select")[0].value = "0" + (Math.floor(Math.random()*10)+1);
+document.querySelectorAll("select")[0].value = "0" + (Math.floor(Math.random()*9)+1);
 document.querySelectorAll("select")[1].value = (Math.floor(Math.random()*19)+10);
 document.querySelectorAll("select")[2].value = 40;
 document.querySelectorAll("input")[40].value = post1;
