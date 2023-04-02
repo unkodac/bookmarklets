@@ -44,7 +44,7 @@
         var ketasuu = Math.floor(Math.random()*6);
         var domainselect = Math.floor(Math.random()*domains.length);
         var mail = Math.random().toString(36).slice(-1*(ketasuu+5)) + domains[domainselect];
-        var prompt = ("メールアドレスを入力してください。");
+        var mail = prompt("メールアドレスを入力してください。");
 
         //住所生成
         var post_pic = Math.floor(Math.random()*array_post.length);
