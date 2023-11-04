@@ -12,29 +12,29 @@ if(document.URL.indexOf("https://l-tike.com/st1/besthit23-1/Tt/Tth050selectdayse
 if(document.URL == "https://l-tike.com/st1/besthit23-1/Tt/Tth160visitorlogin/index"){
     var sheet = prompt("シートの行番号を入力してください。");
     sheet = sheet -2;
-    document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = data[(sheet*19) + 1];
-    document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = data[(sheet*19) + 3];
+    document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = data[(sheet*18) + 1];
+    document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = data[(sheet*18) + 3];
     document.querySelector("[name=NEXT]").click();
 }
 if(document.URL.indexOf("https://l-tike.com/st1res/besthit23-1/Tt/Tth100lottakepayment/index?") != -1){
     var sheet = prompt("シートの行番号を入力してください。");
     sheet = sheet -2;
-    document.querySelectorAll("input")[6].value = data[(sheet*19) + 2].slice(0,4);
-    document.querySelectorAll("input")[7].value = data[(sheet*19) + 2].slice(0,4);
-    document.querySelectorAll("input")[8].value = data[(sheet*19) + 3];
-    document.querySelectorAll("input")[9].value = data[(sheet*19) + 3];
-    document.querySelectorAll("input")[10].value = data[(sheet*19) + 4];
-    document.querySelectorAll("input")[11].value = data[(sheet*19) + 5];
-    document.querySelectorAll("input")[12].value = data[(sheet*19) + 6];
-    document.querySelectorAll("input")[13].value = data[(sheet*19) + 7];
-    document.querySelectorAll("input")[14].value = data[(sheet*19) + 8].slice(0,4);
-    document.querySelectorAll("input")[15].value = data[(sheet*19) + 8].slice(4,6);
-    document.querySelectorAll("input")[16].value = data[(sheet*19) + 8].slice(6,8);
+    document.querySelectorAll("input")[6].value = data[(sheet*18) + 2].slice(0,4);
+    document.querySelectorAll("input")[7].value = data[(sheet*18) + 2].slice(0,4);
+    document.querySelectorAll("input")[8].value = data[(sheet*18) + 3];
+    document.querySelectorAll("input")[9].value = data[(sheet*18) + 3];
+    document.querySelectorAll("input")[10].value = data[(sheet*18) + 4];
+    document.querySelectorAll("input")[11].value = data[(sheet*18) + 5];
+    document.querySelectorAll("input")[12].value = data[(sheet*18) + 6];
+    document.querySelectorAll("input")[13].value = data[(sheet*18) + 7];
+    document.querySelectorAll("input")[14].value = data[(sheet*18) + 8].slice(0,4);
+    document.querySelectorAll("input")[15].value = data[(sheet*18) + 8].slice(4,6);
+    document.querySelectorAll("input")[16].value = data[(sheet*18) + 8].slice(6,8);
     document.querySelectorAll("input")[18].click();
-    document.querySelectorAll("input")[19].value = data[(sheet*19) + 9];
+    document.querySelectorAll("input")[19].value = data[(sheet*18) + 9];
     document.querySelectorAll("select")[0].value = "東京都";
-    document.querySelectorAll("input")[21].value = data[(sheet*19) + 11] + data[(sheet*19) + 12];
-    document.querySelectorAll("input")[22].value = data[(sheet*19) + 13];
+    document.querySelectorAll("input")[21].value = data[(sheet*18) + 11] + data[(sheet*18) + 12];
+    document.querySelectorAll("input")[22].value = data[(sheet*18) + 13];
     document.querySelectorAll("input")[33].click();
 }
 if(document.URL == "https://l-tike.com/st1res/besthit23-1/Tt/Tth100lottakepayment/confirm"){
@@ -43,9 +43,9 @@ if(document.URL == "https://l-tike.com/st1res/besthit23-1/Tt/Tth100lottakepaymen
 if(document.URL == "https://l-tike.com/st1res/besthit23-1/Tt/Tth110lotconfirm/regist"){
     var sheet = prompt("シートの行番号を入力してください。");
     sheet = sheet -2;
-    document.querySelectorAll("input")[3].value = data[(sheet*19) + 14];
-    document.querySelectorAll("select")[0].value = data[(sheet*19) + 15].slice(0,2);
-    document.querySelectorAll("select")[1].value = "20" + data[(sheet*19) + 15].slice(-2);
-    document.querySelectorAll("input")[5].value = data[(sheet*19) + 16]
+    document.querySelectorAll("input")[3].value = data[(sheet*18) + 14];
+    document.querySelectorAll("select")[0].value = data[(sheet*18) + 15].slice(0,2);
+    document.querySelectorAll("select")[1].value = "20" + data[(sheet*18) + 15].slice(-2);
+    document.querySelectorAll("input")[5].value = data[(sheet*18) + 16]
     document.querySelectorAll("input")[6].click();
 }
