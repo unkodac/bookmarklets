@@ -8,7 +8,7 @@ if(document.URL.indexOf("https://va.pia.jp/nmb48-24-9m/entry_hope_init.jsp") != 
         document.querySelectorAll("input")[4].click();
     }
     if(document.querySelectorAll("h2")[0].outerText == "お客様情報入力"){
-        var datapass = prompt("パスワードを入力してください。");
+        var datapass = prompt("メールアドレスを入力してください。");
         var indexnum = data.indexOf(datapass);
         var mail = datalist[indexnum];
         var pass = datalist[indexnum + 1];
