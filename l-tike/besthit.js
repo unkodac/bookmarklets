@@ -5,7 +5,7 @@ if(document.URL == "https://l-tike.com/st1/besthit24-1/sitetop"){
 if(document.URL.indexOf("https://l-tike.com/st1/besthit24-1/Tt/Tth050selectdayseatcount/index?") != -1){
     document.querySelectorAll("div.btnDisplayNone ")[0].click();
     setTimeout(function(){
-        document.querySelectorAll("select")[0].value = "2";
+        document.querySelectorAll("select")[0].value = "1";
         document.querySelectorAll("input.btnBox02")[0].click();
     },1000);
 }
