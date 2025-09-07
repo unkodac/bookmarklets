@@ -53,8 +53,6 @@ if(document.URL.indexOf("https://va.pia.jp/nmb48-15c25mb/entry_hope_init.jsp") !
         document.querySelectorAll("input")[23].value = town;
         document.querySelectorAll("input")[24].value = hn;
         document.querySelectorAll("input")[25].value = pass;
-        document.querySelectorAll("input")[26].value = doukou;
-        document.querySelectorAll("input")[33].click();
     }
     if(document.querySelectorAll("input").length == 14){
         var datapass = prompt("メールアドレスを入力してください。");
